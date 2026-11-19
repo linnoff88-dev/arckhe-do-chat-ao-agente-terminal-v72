@@ -1,0 +1,325 @@
+{
+  "slug": "segredos",
+  "num": 5,
+  "titulo": "Secrets don't go in the text",
+  "titulo_curto": "Secrets outside the text",
+  "menu": "Secrets",
+  "minutos": 14,
+  "lead": "A key pasted into a document, a screenshot, or a request becomes access for whoever reads it, and it stays valid after the conversation ends. Keeping the secret separate from everything else, before the first saved version, lets you share the folder without worry.",
+  "objetivo": "create .env, .env.example and .gitignore before the first commit, and know what to do if a key leaks.",
+  "hero_alt": "A hand holding a keyring in front of a lobby key board, with a safe in the background.",
+  "competencias": [
+    "proteger-segredos",
+    "escrever-gitignore",
+    "responder-a-vazamento"
+  ],
+  "aprende": [
+    {
+      "icone": "cadeado",
+      "t": ".env holds the key; .env.example shows only the names"
+    },
+    {
+      "icone": "escudo",
+      "t": ".gitignore written before the first version"
+    },
+    {
+      "icone": "x",
+      "t": "Leaked? Change the key at the source first"
+    },
+    {
+      "icone": "robo",
+      "t": "The AI needs the variable name, not the value"
+    }
+  ],
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The lobby key board",
+      "sub": "The list of rooms can be in plain sight; the key, no.",
+      "nos": [
+        {
+          "icone": "cadeado",
+          "titulo": ".env",
+          "sub": "Only on your computer",
+          "itens": [
+            {
+              "icone": "arquivo",
+              "t": "MINHA_CHAVE=valor real"
+            }
+          ],
+          "detalhe": "It stores variables: a name, an equals sign and a value. It's not a safe: it isn't encrypted, and anyone who opens the file can read it. That's why it stays only on your machine and never goes to Git.",
+          "forte": true
+        },
+        {
+          "icone": "arquivo",
+          "titulo": ".env.example",
+          "sub": "Can be shared",
+          "itens": [
+            {
+              "icone": "arquivo",
+              "t": "MINHA_CHAVE=preencha_localmente"
+            }
+          ],
+          "detalhe": "The same names, with fake values. Whoever receives the project sees what needs to be filled in, but doesn't get access to anything. Remember: the one that ends in example is the example."
+        },
+        {
+          "icone": "escudo",
+          "titulo": ".gitignore",
+          "sub": "The list of what Git doesn't keep",
+          "itens": [
+            {
+              "icone": "x",
+              "t": ".env and .env.*"
+            },
+            {
+              "icone": "check",
+              "t": "!.env.example"
+            }
+          ],
+          "detalhe": "Each line is a pattern. <code>.env</code> catches the file; <code>.env.*</code> catches variants like .env.local; the line with <code>!</code> opens an exception and puts the .env.example back on the list of what is kept."
+        },
+        {
+          "icone": "git",
+          "titulo": "History",
+          "sub": "What goes in stays",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "README, AGENTS.md, .env.example"
+            }
+          ],
+          "detalhe": ".gitignore only applies to what Git hasn't stored yet. If the .env already went into a commit, a line written afterward doesn't take it out of the history. That's why the list comes before the first version."
+        }
+      ],
+      "legenda": "In the AGENTS.md rule: \"Never write keys or passwords in a text file; they stay in the .env.\"",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "Ignore before the first commit",
+        "texto": "The .env with the real value stays at home, the .env.example circulates, and the .gitignore decides that before Git stores any version. Once the mail pouch has left, crossing the paper off the list doesn't bring it back."
+      }
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Four rules about secrets",
+      "sub": "Click on each one.",
+      "passos": [
+        {
+          "titulo": "A credential is the room key",
+          "sub": "Whoever has it acts for you",
+          "texto": [
+            "A password, an API key and a bot token let whoever has them act on behalf of your account, and you're the one who pays.",
+            "Before sending a screenshot, check the corners of the screen: a visible password becomes everyone's who received it."
+          ],
+          "exemplo": {
+            "rot": "Corrected screenshot",
+            "texto": "The same screen, with the password covered before sending."
+          }
+        },
+        {
+          "titulo": "The AI needs the name",
+          "sub": "Not the value",
+          "texto": [
+            "To help, the AI almost always only needs to know the variable exists, such as <code>TELEGRAM_BOT_TOKEN</code>.",
+            "A real value doesn't go in a request, a course example or a file sent to the AI unless necessary."
+          ],
+          "exemplo": {
+            "rot": "The right request",
+            "texto": "The bot token is in the TELEGRAM_BOT_TOKEN variable in the .env."
+          }
+        },
+        {
+          "titulo": "The list before the version",
+          "sub": ".gitignore first",
+          "texto": [
+            "Create the .gitignore before the first <code>git commit</code>. It does not remove from the history what has already gone in.",
+            "In the next lesson, <code>git status</code> is the proof: the .env must not appear."
+          ],
+          "exemplo": {
+            "rot": "Check",
+            "texto": "git status does not show the .env."
+          }
+        },
+        {
+          "titulo": "Did it leak?",
+          "sub": "Replace it at the source first",
+          "texto": [
+            "If a key was published or pasted by mistake, the first fix is to revoke the key on the site that created it and generate another one. Deleting the message or the line does not invalidate the copy someone has already seen.",
+            "Only after that, take care of the file and the history."
+          ],
+          "exemplo": {
+            "rot": "Order",
+            "texto": "1. Revoke and replace. 2. Clean up the file."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "The three files",
+      "sub": "In the meu-primeiro-agente folder. The key is fake, for practice.",
+      "blocos": [
+        {
+          "rot": "cmd · create the practice .env and the .gitignore",
+          "icone": "terminal",
+          "conteudo": "cd %USERPROFILE%\\projetos\\meu-primeiro-agente\necho MINHA_CHAVE=teste123> .env\necho MINHA_CHAVE=preencha_localmente> .env.example\necho .env> .gitignore\necho .env.*>> .gitignore\necho !.env.example>> .gitignore\ntype .gitignore"
+        },
+        {
+          "rot": ".gitignore (what it should contain)",
+          "icone": "escudo",
+          "conteudo": ".env\n.env.*\n!.env.example"
+        },
+        {
+          "rot": "AGENTS.md · new rule",
+          "icone": "arquivo",
+          "conteudo": "- Never write keys or passwords in a text file; they stay in the .env.\n- If you need a key, cite the variable name, never the value."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "What shows up",
+            "html": "<pre>C:\\Users\\ana\\projetos\\meu-primeiro-agente&gt; type .gitignore\n.env\n.env.*\n!.env.example</pre><p>One <code>&gt;</code> creates the file (or replaces its content); two <code>&gt;&gt;</code> add a line at the end.</p>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>Space before the &gt;</b>: <code>echo .env &gt; .gitignore</code> writes \".env \" with a trailing space. Write it attached: <code>echo .env&gt; .gitignore</code>.</li><li><b>Key in AGENTS.md \"so the agent knows how to use it\"</b>: anything that is in text can end up on GitHub.</li><li><b>.gitignore after the commit</b>: the .env is still in the old version.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "simterm",
+      "titulo": "Rehearse: the secret stays out of the text",
+      "sub": "Create the files and check the list.",
+      "janela": "Command Prompt · simulation",
+      "sistema": "windows",
+      "inicio": "C:\\Users\\ana\\projetos\\meu-primeiro-agente",
+      "sufixo": ">",
+      "missoes": [
+        {
+          "pede": "Create the .env with the fake key <code>MINHA_CHAVE=teste123</code>.",
+          "aceita": [
+            "echo MINHA_CHAVE=teste123> .env",
+            "echo MINHA_CHAVE=teste123>.env"
+          ],
+          "saida": "",
+          "explica": "The practice value is in the .env. With a real key it is the same, and the file never leaves here."
+        },
+        {
+          "pede": "Create the .gitignore with the line <code>.env</code> (no space before the &gt;).",
+          "aceita": [
+            "echo .env> .gitignore",
+            "echo .env>.gitignore"
+          ],
+          "saida": "",
+          "explica": "One &gt; creates the file. With no space before it, the line is exactly \".env\"."
+        },
+        {
+          "pede": "Add the line <code>.env.*</code>.",
+          "aceita": [
+            "echo .env.*>> .gitignore",
+            "echo .env.*>>.gitignore"
+          ],
+          "saida": "",
+          "explica": "Two &gt;&gt; add to the end. The asterisk stands for any ending, like .env.local."
+        },
+        {
+          "pede": "Add the exception <code>!.env.example</code>.",
+          "aceita": [
+            "echo !.env.example>> .gitignore",
+            "echo !.env.example>>.gitignore"
+          ],
+          "saida": "",
+          "explica": "The exclamation mark puts the example back on the list of what is kept."
+        },
+        {
+          "pede": "Show the .gitignore.",
+          "aceita": [
+            "type .gitignore"
+          ],
+          "saida": ".env\n.env.*\n!.env.example",
+          "explica": "Three lines, in order. In the next lesson, <code>git status</code> proves the .env stayed out."
+        }
+      ],
+      "fim": "List ready before the first version. This is what good practice calls for.",
+      "legenda": "Simulation: in your cmd the commands are the same."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Before any git commit.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E9 · A secret never goes into text",
+          "min": "10 min",
+          "texto": "Create the .env with the fake key, the .env.example with the dummy value and the .gitignore with the three lines. Add the rule to AGENTS.md.",
+          "pronto": "<code>type .gitignore</code> shows .env, .env.* and !.env.example, and no file other than the .env has the value teste123."
+        },
+        {
+          "id": "e2",
+          "titulo": "E10 · Leak rehearsal",
+          "min": "5 min",
+          "texto": "In the project sheet, write down, for each credential you use (subscription, token, key), the site where it is replaced.",
+          "pronto": "for each credential you know which page to use to revoke it and generate another one, without searching in the heat of the moment."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "Where does an API key live in the project?",
+          "opcoes": [
+            "In AGENTS.md, so the agent knows how to use it.",
+            "In .env, which is listed in .gitignore.",
+            "In .env.example.",
+            "In the README, as a comment."
+          ],
+          "certa": 1,
+          "explica": "The key goes only in .env, and .env goes in .gitignore. The .env.example has only the name with a fake value.",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "A coworker added .env to .gitignore a week after the first version. Is the .env gone from the history?",
+          "opcoes": [
+            "No: the old version still has the .env inside.",
+            "Only if the file is renamed.",
+            "Yes, .gitignore erases it from the history.",
+            "Yes, after the next push."
+          ],
+          "certa": 0,
+          "explica": "The .gitignore applies from now on, and only to what hasn't been saved yet. That's why it comes before the first commit.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "You pasted a real key into a group by mistake. What is the first step?",
+          "opcoes": [
+            "Ask everyone not to use it.",
+            "Revoke the key on the site that created it and generate a new one.",
+            "Rename the variable.",
+            "Delete the message."
+          ],
+          "certa": 1,
+          "explica": "Deleting doesn't invalidate the copy someone has already seen. Revoking at the source shuts off access; then you clean up the rest.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Go deeper",
+      "links": [
+        {
+          "t": "OSWork v6.2: a secret is not knowledge to share",
+          "href": "https://inematds.github.io/oswork-v62/",
+          "icone": "cadeado"
+        }
+      ]
+    }
+  ]
+}

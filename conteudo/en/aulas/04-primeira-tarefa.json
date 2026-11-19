@@ -1,0 +1,293 @@
+{
+  "slug": "primeira-tarefa",
+  "num": 4,
+  "titulo": "First the agent reads, then it changes",
+  "titulo_curto": "The first task",
+  "menu": "Task",
+  "minutos": 18,
+  "lead": "\"Fix up the project\" mixes diagnosis and change: if something goes wrong, you don't know which part it was. Separating reading from changing, giving the smallest permission that works and asking for a wrap-up that says what was checked turns the agent into someone you manage.",
+  "objetivo": "give the agent a scoped task, check what it read and changed, and ask for at least one fix.",
+  "hero_alt": "Person checking a printed sheet with a pen next to the laptop with the terminal.",
+  "competencias": [
+    "delegar-com-escopo",
+    "conferir-entrega",
+    "permissao-minima"
+  ],
+  "aprende": [
+    {
+      "icone": "lupa",
+      "t": "Ask for reading without editing and check the files used"
+    },
+    {
+      "icone": "arquivo",
+      "t": "Authorize a small, named change"
+    },
+    {
+      "icone": "escudo",
+      "t": "Write an authorization in five parts"
+    },
+    {
+      "icone": "check",
+      "t": "Require the wrap-up: done, checked, pending"
+    }
+  ],
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Inspection before the remodel",
+      "sub": "The order of the first job, in four stages.",
+      "nos": [
+        {
+          "icone": "lupa",
+          "titulo": "Inspect",
+          "sub": "Read and explain, without editing",
+          "itens": [
+            {
+              "icone": "arquivo",
+              "t": "Which files did it use?"
+            }
+          ],
+          "detalhe": "No file changes in this stage. Ask in so many words: without editing. And ask it to say which files it read, so you can compare with <code>dir /b</code>."
+        },
+        {
+          "icone": "lista",
+          "titulo": "Plan",
+          "sub": "Say what is missing",
+          "itens": [
+            {
+              "icone": "lista",
+              "t": "plano.md with 3 actions"
+            }
+          ],
+          "detalhe": "The list of what is missing is your reference. If it told you it didn't open a file, the plan doesn't know that content yet: say in your next request what it should rely on."
+        },
+        {
+          "icone": "caneta",
+          "titulo": "Change",
+          "sub": "One file, by name",
+          "itens": [
+            {
+              "icone": "arquivo",
+              "t": "only index.html"
+            }
+          ],
+          "detalhe": "You say which file can be created or changed. If the agent asks before editing, check that it's only that file and approve. If it's another one, refuse.",
+          "forte": true
+        },
+        {
+          "icone": "check",
+          "titulo": "Validate",
+          "sub": "You open it and check",
+          "itens": [
+            {
+              "icone": "lupa",
+              "t": "start index.html"
+            },
+            {
+              "icone": "chat",
+              "t": "ask for a correction"
+            }
+          ],
+          "detalhe": "The last word is yours. Open the result and compare it with what you asked for. Ask for at least one correction: giving the task, checking it, and deciding is management."
+        }
+      ],
+      "volta": "Didn't turn out well? Go back to inspecting with a clearer request",
+      "legenda": "It works the same in Claude Code and Codex: both read AGENTS.md and work in the folder where they were opened.",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "Using × managing",
+        "texto": "Someone who uses asks and accepts. Someone who manages separates reading from changing, authorizes with a scope, and checks before approving. The difference is in the habit, not the tool."
+      }
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Autonomy is authorization with a scope",
+      "sub": "Five parts that fit on a sticky note.",
+      "passos": [
+        {
+          "titulo": "Goal and files",
+          "sub": "What, and with what",
+          "texto": [
+            "Say what to produce and what it can read. \"Draft of the September report, only from the September spreadsheet.\"",
+            "A small folder, with only the task's material, already limits what it can reach."
+          ],
+          "exemplo": {
+            "rot": "Example",
+            "texto": "Goal: index.html about me. Files: only AGENTS.md."
+          }
+        },
+        {
+          "titulo": "Actions and stopping point",
+          "sub": "What it can do and where it stops",
+          "texto": [
+            "Say which actions are authorized and which are forbidden: read and create, yes; delete and rename, no. Sending, publishing, and deleting are external actions: each one requires an explicit instruction.",
+            "The button existing is not permission. Say where it stops and waits for you."
+          ],
+          "exemplo": {
+            "rot": "Stop",
+            "texto": "Hand in the draft and stop before sending."
+          }
+        },
+        {
+          "titulo": "Minimum permission",
+          "sub": "One step at a time",
+          "texto": [
+            "Reading files is low risk; writing, medium; running commands, high. Start with the most restricted option that gets the task done.",
+            "A written rule guides; what actually stops it is the program's permissions. In Codex, <code>/permissions</code> shows and changes what it can do."
+          ],
+          "exemplo": {
+            "rot": "Don't",
+            "texto": "Remove all the protections to get around an error."
+          }
+        },
+        {
+          "titulo": "Wrap-up",
+          "sub": "Done, checked, pending",
+          "texto": [
+            "Always ask it to finish by saying what was done, how it was verified, and what is still pending.",
+            "That way the result becomes something you review, not something you have to take on faith."
+          ],
+          "exemplo": {
+            "rot": "Wrap-up",
+            "texto": "Feito: index.html. Conferido: abre no navegador. Pendente: foto."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "The requests, in order",
+      "sub": "Open the agent inside the folder (claude or codex) and paste one request at a time.",
+      "blocos": [
+        {
+          "rot": "Request 1 · read only",
+          "icone": "lupa",
+          "conteudo": "Read AGENTS.md and README.md. Explain the project's purpose and list what is missing, without editing anything. At the end, say which files you used."
+        },
+        {
+          "rot": "Request 2 · a change with a name and a stop",
+          "icone": "caneta",
+          "conteudo": "Read AGENTS.md. Create only index.html with a simple page about me, using what is there. Do not change or delete any other files.\nAt the end, tell me: what was done, how you checked it, and what is still pending."
+        },
+        {
+          "rot": "cmd · check the change",
+          "icone": "terminal",
+          "conteudo": "dir /b\nstart index.html"
+        },
+        {
+          "rot": "Request 3 · the correction",
+          "icone": "chat",
+          "conteudo": "Change the title to \"<your title>\" and add a contact section. Only in index.html."
+        },
+        {
+          "rot": "Request 4 · the agent reads your files",
+          "icone": "arquivo",
+          "conteudo": "Read the .txt files in the entradas folder and write saidas/resumo.md with 5 decisions and 5 pending items, citing which file each one came from."
+        },
+        {
+          "rot": "cmd · a restore point before Git (lesson 6)",
+          "icone": "camadas",
+          "conteudo": "cd %USERPROFILE%\\projetos\nxcopy /e /i meu-primeiro-agente meu-primeiro-agente-antes\nrem after the change, compare:\nfc /n meu-primeiro-agente-antes\\*.md meu-primeiro-agente\\*.md"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "A good answer",
+            "html": "<p><b>Request 1:</b> \"The purpose is a page about Ana. Missing: the index.html, the format, and how to check it. Files read: AGENTS.md and README.md. I also looked at the file listing. Nothing was edited.\"</p><p>It explained, listed what is missing, and said what it read and what it did not read. No file changed.</p>"
+          },
+          {
+            "rot": "How to check",
+            "html": "<ol><li>The files it says it read exist in the <code>dir /b</code> listing.</li><li>After request 2, only index.html appeared.</li><li>The page opens in the browser and you asked for a correction.</li><li>In resumo.md, you found at least two of the quoted sentences in the original.</li></ol>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>\"Improve the page\"</b>: produces a change you don't know how to check. Ask for a result you can see.</li><li><b>Approving without reading</b>: the agent asks before editing precisely so you can see which file changes.</li><li><b>A quote that doesn't exist in the original</b>: add the missing rule to AGENTS.md (\"quote only sentences that exist in the file\").</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "With the agent open inside meu-primeiro-agente.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E7 · The first task",
+          "min": "20 min",
+          "texto": "Make request 1 (read-only) and request 2. Open the page with <code>start index.html</code> and ask for a change.",
+          "pronto": "the page opens in the browser and you asked the agent for at least one correction."
+        },
+        {
+          "id": "e2",
+          "titulo": "E8 · The agent reads your files",
+          "min": "20 min",
+          "texto": "Put three of your own texts in entradas (notes, meeting minutes, a long email) and make request 4. Check two quotes against the original file.",
+          "pronto": "you found at least two of the quoted sentences in the original. If any of them doesn't exist, the missing rule goes into AGENTS.md."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "What is the best first request in a new folder?",
+          "opcoes": [
+            "\"Do whatever you think is best.\"",
+            "\"Read AGENTS.md and README.md, explain, and list what is missing, without editing; say which files you used.\"",
+            "\"Create all the files that are missing.\"",
+            "\"Fix the project.\""
+          ],
+          "certa": 1,
+          "explica": "Inspection first: read without editing and say what you used. That gives you a reference point before any change.",
+          "cert": true,
+          "ref": "diagrama"
+        },
+        {
+          "p": "The authorization said only \"organize the exams folder,\" and the agent deleted three files that looked like copies. What was missing?",
+          "opcoes": [
+            "The authorized actions.",
+            "The time limit.",
+            "The goal.",
+            "The model name."
+          ],
+          "certa": 0,
+          "explica": "Without saying what it can and cannot do (read and create, yes; delete, no), deleting was left implied.",
+          "ref": "passos"
+        },
+        {
+          "p": "AGENTS.md says \"don't send anything.\" Does that technically prevent sending?",
+          "opcoes": [
+            "Yes, if the file is in capital letters.",
+            "Yes, the agent never disobeys.",
+            "No: the rule guides; what prevents it is the program's permissions.",
+            "Only in Codex."
+          ],
+          "certa": 2,
+          "explica": "A written rule guides behavior; a permission limits what is possible. The two complement each other.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Go deeper",
+      "links": [
+        {
+          "t": "OSWork v6.2: autonomy is scoped authorization",
+          "href": "https://inematds.github.io/oswork-v62/",
+          "icone": "escudo"
+        },
+        {
+          "t": "OSWork area in Eventos",
+          "href": "https://eventos.inema.pro/oswork/",
+          "icone": "terminal"
+        }
+      ]
+    }
+  ]
+}

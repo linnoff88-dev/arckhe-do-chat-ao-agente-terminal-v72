@@ -1,0 +1,406 @@
+{
+  "slug": "terminal",
+  "num": 1,
+  "titulo": "The terminal starts by telling you where you are",
+  "titulo_curto": "Where you are",
+  "menu": "Terminal",
+  "minutos": 15,
+  "lead": "The terminal is just another window into the same folders as File Explorer. You type a line, it sends one back. With six commands you know where you are, see what's there, create your projects folder, and move between folders without the mouse.",
+  "objetivo": "open cmd, tell which folder you're in, and move around folders with six commands, without the mouse.",
+  "hero_alt": "Hands over the keyboard of a laptop with the black Command Prompt window open.",
+  "competencias": [
+    "abrir-terminal",
+    "ler-o-prompt",
+    "navegar-pastas",
+    "criar-pasta-projetos"
+  ],
+  "aprende": [
+    {
+      "icone": "terminal",
+      "t": "Open cmd and read the line that ends in >"
+    },
+    {
+      "icone": "lupa",
+      "t": "Know where you are with cd and what's there with dir"
+    },
+    {
+      "icone": "pasta",
+      "t": "Create projetos\\meu-primeiro-agente and go into it"
+    },
+    {
+      "icone": "camadas",
+      "t": "See the same folder in File Explorer with explorer ."
+    }
+  ],
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The back and forth of the terminal",
+      "sub": "You type, it answers, and the > comes back, waiting for you.",
+      "nos": [
+        {
+          "icone": "usuario",
+          "titulo": "You type",
+          "sub": "One line, then Enter",
+          "itens": [
+            {
+              "icone": "terminal",
+              "t": "cd"
+            },
+            {
+              "icone": "terminal",
+              "t": "dir"
+            }
+          ],
+          "detalhe": "When it opens, cmd shows a short line that ends in <code>&gt;</code>, with a blinking cursor. That's the computer waiting for you. Nothing happens until you type and press Enter."
+        },
+        {
+          "icone": "terminal",
+          "titulo": "The prompt",
+          "sub": "C:\\Users\\voce>",
+          "itens": [
+            {
+              "icone": "pasta",
+              "t": "The path before the >",
+              "sub": "is the folder you're in"
+            }
+          ],
+          "detalhe": "Read the path like an address. Each backslash separates a folder, and the last one is where you are right now. Your personal folder is <code>C:\\Users\\</code> followed by your username.",
+          "forte": true
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "The answer",
+          "sub": "The lines without >",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "Result of the command"
+            },
+            {
+              "icone": "x",
+              "t": "Or the error message"
+            }
+          ],
+          "detalhe": "The line without <code>&gt;</code> is the computer's answer. Many commands that work give no answer at all: the next command confirms it, like <code>cd</code> or <code>dir</code>."
+        },
+        {
+          "icone": "pasta",
+          "titulo": "File Explorer",
+          "sub": "The same folder, with icons",
+          "itens": [
+            {
+              "icone": "camadas",
+              "t": "explorer ."
+            }
+          ],
+          "detalhe": "The terminal and File Explorer show the same disk. Create a folder in one, and it shows up in the other. The <code>explorer .</code> command opens the file window right in the folder you're in."
+        }
+      ],
+      "volta": "Command, answer, and the > back again: it's always this back and forth",
+      "legenda": "On Mac and Linux the terminal is called Terminal and ends in $; the commands have different names (table at the end of the lesson).",
+      "rolagem": true,
+      "rolagem_fim": {
+        "titulo": "Location first, then the files",
+        "texto": "Before any command that changes something, look at the path before the &gt;. Many errors that look like an AI failure are just the wrong folder: if you don't know where you are, the agent doesn't either."
+      }
+    },
+    {
+      "tipo": "passos",
+      "titulo": "The six commands, one at a time",
+      "sub": "Click each step. None of these deletes anything.",
+      "passos": [
+        {
+          "titulo": "Open cmd",
+          "sub": "Windows key, cmd, Enter",
+          "texto": [
+            "Press the Windows key, type <code>cmd</code> and press Enter. This opens the Command Prompt, the black window. You don't need to open it as administrator.",
+            "If the line starts with <code>PS</code>, you opened PowerShell, a different terminal. Close it and look for cmd again. On Mac: Cmd+Space and type Terminal."
+          ],
+          "exemplo": {
+            "rot": "What shows up",
+            "texto": "C:\\Users\\voce> with the cursor blinking."
+          }
+        },
+        {
+          "titulo": "Where am I",
+          "sub": "cd by itself",
+          "texto": [
+            "The <code>cd</code> command, typed with nothing else, is the \"you are here\" on the map. It answers with the full path of the current folder.",
+            "On Mac and Linux, <code>pwd</code> does the same job."
+          ],
+          "exemplo": {
+            "rot": "Answer",
+            "texto": "C:\\Users\\voce"
+          }
+        },
+        {
+          "titulo": "What's in here",
+          "sub": "dir",
+          "texto": [
+            "Once you know where you are, look at what's inside. <code>dir</code> lists the folders and files; <code>dir /b</code> shows only the names, one per line.",
+            "On Mac and Linux: <code>ls</code>."
+          ],
+          "exemplo": {
+            "rot": "Answer",
+            "texto": "Desktop, Documents, Downloads…"
+          }
+        },
+        {
+          "titulo": "Create and enter",
+          "sub": "mkdir and cd name",
+          "texto": [
+            "<code>mkdir projetos</code> creates the folder. <code>cd projetos</code> goes into it, and the path before the <code>&gt;</code> changes.",
+            "Use short names, with no spaces and no accents, like <code>meu-primeiro-agente</code>. In the terminal, spaces and accents cause trouble."
+          ],
+          "exemplo": {
+            "rot": "The prompt afterward",
+            "texto": "C:\\Users\\voce\\projetos>"
+          }
+        },
+        {
+          "titulo": "Go back and look",
+          "sub": "cd .. and explorer .",
+          "texto": [
+            "<code>cd ..</code> goes up one folder. <code>explorer .</code> opens File Explorer in the current folder: the dot means \"here\".",
+            "<code>cls</code> clears the screen without deleting anything. The Tab key completes folder names as you type."
+          ],
+          "exemplo": {
+            "rot": "Golden rule",
+            "texto": "Lost? Type cd and read the answer."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "The commands in this lesson",
+      "sub": "Copy one block at a time into cmd. Replace whatever is between < > with your own.",
+      "blocos": [
+        {
+          "rot": "cmd · where am I and what is here",
+          "icone": "terminal",
+          "conteudo": "cd\ndir\ndir /b"
+        },
+        {
+          "rot": "cmd · the projects folder and the first project's folder",
+          "icone": "pasta",
+          "conteudo": "cd %USERPROFILE%\nmkdir projetos\ncd projetos\nmkdir meu-primeiro-agente\ncd meu-primeiro-agente\ncd"
+        },
+        {
+          "rot": "cmd · see the same folder and navigate",
+          "icone": "camadas",
+          "conteudo": "explorer .\ncd ..\ndir\ncd meu-primeiro-agente\ndir"
+        },
+        {
+          "rot": "Mac and Linux · the same steps",
+          "icone": "terminal",
+          "conteudo": "pwd\nls\nmkdir -p ~/projetos/meu-primeiro-agente\ncd ~/projetos/meu-primeiro-agente\npwd"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "What shows up",
+            "html": "<pre>C:\\Users\\ana&gt; cd %USERPROFILE%\nC:\\Users\\ana&gt; mkdir projetos\nC:\\Users\\ana&gt; cd projetos\nC:\\Users\\ana\\projetos&gt; mkdir meu-primeiro-agente\nC:\\Users\\ana\\projetos&gt; cd meu-primeiro-agente\nC:\\Users\\ana\\projetos\\meu-primeiro-agente&gt; cd\nC:\\Users\\ana\\projetos\\meu-primeiro-agente</pre><p><code>mkdir</code> and <code>cd</code> don't say anything when they work. The path before the <code>&gt;</code> and the lone <code>cd</code> are what confirm it.</p>"
+          },
+          {
+            "rot": "Got an error?",
+            "html": "<ul><li><b>\"The system cannot find the path specified\"</b>: the name is wrong or the folder doesn't exist here. Run <code>dir</code> and copy the exact name.</li><li><b>\"A subdirectory or file projetos already exists\"</b>: it was already created. Just go in with <code>cd projetos</code>.</li><li><b>The line starts with PS</b>: that's PowerShell. Close it and open cmd.</li></ul>"
+          },
+          {
+            "rot": "cmd × Linux",
+            "html": "<ul><li><code>cd</code> alone → <code>pwd</code>: where am I</li><li><code>dir</code> → <code>ls</code>: lists the folder</li><li><code>mkdir nome</code> → <code>mkdir -p nome</code>: creates</li><li><code>cls</code> → <code>clear</code>: clears the screen</li><li><code>type arquivo</code> → <code>cat arquivo</code>: shows the file</li><li><code>%USERPROFILE%</code> → <code>~</code>: home folder</li></ul><p>On Linux, uppercase matters: Projetos and projetos are different folders.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "simterm",
+      "titulo": "Rehearse first, no risk",
+      "sub": "A fake cmd: type the command for each mission and press Enter. Nothing runs on your computer.",
+      "janela": "Command Prompt · simulation",
+      "sistema": "windows",
+      "inicio": "C:\\Users\\ana",
+      "sufixo": ">",
+      "missoes": [
+        {
+          "pede": "Find out which folder you are in.",
+          "aceita": [
+            "cd"
+          ],
+          "saida": "{cwd}",
+          "explica": "The lone <code>cd</code> answered with the address: Ana's home folder. Nothing changed."
+        },
+        {
+          "pede": "See just the names of what is here.",
+          "aceita": [
+            "dir /b"
+          ],
+          "saida": "Desktop\nDocuments\nDownloads",
+          "explica": "<code>dir /b</code> lists only the names, one per line. <code>dir</code> without /b also shows the date and size."
+        },
+        {
+          "pede": "Create the <code>projetos</code> folder.",
+          "aceita": [
+            "mkdir projetos",
+            "md projetos"
+          ],
+          "saida": "",
+          "explica": "Silence is success: <code>mkdir</code> says nothing when it works."
+        },
+        {
+          "pede": "Go into the <code>projetos</code> folder.",
+          "aceita": [
+            "cd projetos"
+          ],
+          "saida": "",
+          "vai": "C:\\Users\\ana\\projetos",
+          "explica": "Look at the path before the &gt;: it gained <code>\\projetos</code>. That's how you know you got in."
+        },
+        {
+          "pede": "Create the <code>meu-primeiro-agente</code> folder.",
+          "aceita": [
+            "mkdir meu-primeiro-agente",
+            "md meu-primeiro-agente"
+          ],
+          "saida": "",
+          "explica": "Short name, no spaces and no accents: in the terminal this avoids quotes and typing mistakes."
+        },
+        {
+          "pede": "Go into it.",
+          "aceita": [
+            "cd meu-primeiro-agente"
+          ],
+          "saida": "",
+          "vai": "C:\\Users\\ana\\projetos\\meu-primeiro-agente",
+          "explica": "This is the folder where the agent will work in the next lessons."
+        },
+        {
+          "pede": "Open the same folder in File Explorer.",
+          "aceita": [
+            "explorer ."
+          ],
+          "saida": "(File Explorer opens at projetos › meu-primeiro-agente)",
+          "explica": "The dot means \"here.\" Terminal and File Explorer show the same place: create something in one, and it shows up in the other."
+        },
+        {
+          "pede": "Go up one folder.",
+          "aceita": [
+            "cd .."
+          ],
+          "saida": "",
+          "vai": "C:\\Users\\ana\\projetos",
+          "explica": "<code>cd ..</code> goes back one level. To go in again: <code>cd meu-primeiro-agente</code>."
+        }
+      ],
+      "fim": "Missions accomplished. Now do the same in your own cmd: that's the practice right below.",
+      "legenda": "Simulation: Ana's home folder is just an example. On your computer, your own username shows up."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Do it on your computer. Only move on when the \"done when\" is true.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · First folder through the terminal",
+          "min": "10 min",
+          "texto": "Create projetos\\meu-primeiro-agente, go into it, and list the contents (it will be empty). Run <code>explorer .</code> and compare it with File Explorer.",
+          "pronto": "you get to the folder using only the terminal, without the mouse, and you can tell which folder you're in."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Create in one, it shows up in the other",
+          "min": "5 min",
+          "texto": "In File Explorer, create any text file inside meu-primeiro-agente. Go back to cmd and run <code>dir /b</code>.",
+          "pronto": "the file you created with the mouse shows up in the terminal's list. If it doesn't, you're in a different folder: run <code>cd</code>."
+        }
+      ]
+    },
+    {
+      "tipo": "video",
+      "titulo": "Step 1 on video",
+      "sub": "Six commands, an AGENTS.md, and the first task, in under two minutes.",
+      "chave": "seq1-oswork"
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "You opened cmd and want to know which folder you're in. What do you type?",
+          "opcoes": [
+            "cd, by itself",
+            "explorer",
+            "dir",
+            "mkdir"
+          ],
+          "certa": 0,
+          "explica": "<code>cd</code> with nothing after it prints the full path of the current folder. <code>dir</code> shows what's inside it, but not the address.",
+          "cert": true,
+          "ref": "passos"
+        },
+        {
+          "p": "You ran <code>mkdir projetos</code> and the terminal didn't say anything. What does that mean?",
+          "opcoes": [
+            "That the command is still running.",
+            "That it failed and nothing was created.",
+            "That it worked; confirm with dir.",
+            "That you need to open it as administrator."
+          ],
+          "certa": 2,
+          "explica": "Many commands stay silent when they work. The next command is what confirms it: <code>dir</code> shows the new folder.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "You created a file in File Explorer, but it doesn't show up in <code>dir</code>. What is the most likely cause?",
+          "opcoes": [
+            "The file was created empty.",
+            "The terminal can't see files from File Explorer.",
+            "You need to restart the computer.",
+            "You're in a different folder in the terminal."
+          ],
+          "certa": 3,
+          "explica": "Terminal and File Explorer show the same disk. If the file doesn't show up, the terminal is in a different folder: run <code>cd</code> and compare the paths.",
+          "ref": "codigo"
+        },
+        {
+          "p": "On the VPS, running Linux, which command does the job of <code>dir</code>?",
+          "opcoes": [
+            "pwd",
+            "cls",
+            "type",
+            "ls"
+          ],
+          "certa": 3,
+          "explica": "<code>ls</code> lists the folder. <code>pwd</code> is the equivalent of <code>cd</code> by itself, and <code>cat</code> is the equivalent of <code>type</code>.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Go deeper",
+      "links": [
+        {
+          "t": "Overview: the four steps of the program",
+          "href": "https://inematds.github.io/do-chat-ao-agente-v72/en/",
+          "icone": "camadas"
+        },
+        {
+          "t": "OSWork Quick: the complete command cheat sheet",
+          "href": "https://inematds.github.io/oswork-quick/materiais/",
+          "icone": "lista"
+        },
+        {
+          "t": "OSWork area in Eventos",
+          "href": "https://eventos.inema.pro/oswork/",
+          "icone": "terminal"
+        }
+      ]
+    }
+  ]
+}
