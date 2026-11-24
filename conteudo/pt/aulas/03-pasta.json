@@ -215,8 +215,8 @@
       "tipo": "links",
       "titulo": "Para aprofundar",
       "links": [
-        {"t": "OSWork v6.2: pastas, Markdown e segredos (módulo 4)", "href": "https://inematds.github.io/oswork-v62/", "icone": "lista"},
-        {"t": "Exercícios do degrau 1 no jornada-agentes", "href": "https://github.com/inematds/jornada-agentes/blob/main/exercicios/01-oswork.md", "icone": "check"}
+        {"t": "OSWork v6.2: pastas, Markdown e segredos (módulo 4)", "href": "https://linnoff88-dev.github.io/ "icone": "lista"},
+        {"t": "Exercícios do degrau 1 no jornada-agentes", "href": "https://github.com/linnoff88-dev/jornada-agentes/blob/main/exercicios/01-oswork.md", "icone": "check"}
       ]
     }
   ]

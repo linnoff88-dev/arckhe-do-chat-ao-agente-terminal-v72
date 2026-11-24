@@ -302,11 +302,11 @@
       "tipo": "links",
       "titulo": "Próximos passos",
       "links": [
-        {"t": "Voltar à visão geral: Do chat ao agente (degraus 2, 3 e 4)", "href": "https://inematds.github.io/do-chat-ao-agente-v72/", "icone": "camadas"},
-        {"t": "Vídeo: OSWork na prática, comando por comando", "href": "https://inematds.github.io/oswork-terminal/videos/", "icone": "video"},
-        {"t": "OSWork Quick: cola de comandos", "href": "https://inematds.github.io/oswork-quick/materiais/", "icone": "lista"},
-        {"t": "OSWork v6.2: o curso completo em 49 aulas", "href": "https://inematds.github.io/oswork-v62/", "icone": "terminal"},
-        {"t": "Área OSWork no Eventos", "href": "https://eventos.inema.pro/oswork/", "icone": "seta"}
+        {"t": "Voltar à visão geral: Do chat ao agente (degraus 2, 3 e 4)", "href": "https://linnoff88-dev.github.io/ "icone": "camadas"},
+        {"t": "Vídeo: OSWork na prática, comando por comando", "href": "https://linnoff88-dev.github.io/ "icone": "video"},
+        {"t": "OSWork Quick: cola de comandos", "href": "https://linnoff88-dev.github.io/ "icone": "lista"},
+        {"t": "OSWork v6.2: o curso completo em 49 aulas", "href": "https://linnoff88-dev.github.io/ "icone": "terminal"},
+        {"t": "Área OSWork no Eventos", "href": "https://eventos.ARCKHÉ.pro/oswork/", "icone": "seta"}
       ]
     }
   ]

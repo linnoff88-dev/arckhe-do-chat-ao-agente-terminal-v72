@@ -1,4 +1,4 @@
-﻿# Do chat para o terminal â€” curso (INEMA Learning v7.2)
+# Do chat para o terminal â€” curso (ARCKHÉ Learning v7.2)
 
 <div align="center">
   <img src="capa/logo.svg" alt="Arckhé AI" height="48" />
@@ -6,11 +6,11 @@
 </div>
 
 
-Curso completo do **degrau 1** da formaÃ§Ã£o [Do chat ao agente](https://inematds.github.io/do-chat-ao-agente-v72/): do terminal vazio ao agente (Claude Code ou Codex) trabalhando numa pasta sua, com AGENTS.md, segredos fora do texto, Git para desfazer, pÃ¡gina no GitHub Pages e o mesmo projeto numa VPS.
+Curso completo do **degrau 1** da formaÃ§Ã£o [Do chat ao agente](https://linnoff88-dev.github.io/ do terminal vazio ao agente (Claude Code ou Codex) trabalhando numa pasta sua, com AGENTS.md, segredos fora do texto, Git para desfazer, pÃ¡gina no GitHub Pages e o mesmo projeto numa VPS.
 
-**Abrir o curso:** https://inematds.github.io/do-chat-ao-agente-terminal-v72/
+**Abrir o curso:** https://linnoff88-dev.github.io/
 
-**English:** https://inematds.github.io/do-chat-ao-agente-terminal-v72/en/ Â· **EspaÃ±ol:** https://inematds.github.io/do-chat-ao-agente-terminal-v72/es/
+**English:** https://linnoff88-dev.github.io/ Â· **EspaÃ±ol:** https://linnoff88-dev.github.io/
 
 | Aula | O que vocÃª sai fazendo |
 |---|---|
@@ -35,15 +35,15 @@ node ~/.claude/skills/formato-curso-v72/scripts/conferir-tela.cjs .
 
 `conteudo/pt/` (JSON) â†’ `gerar.py` â†’ `index.html` e `aulas/<slug>/index.html`. HTML estÃ¡tico, sem build e sem backend; o progresso fica sÃ³ no navegador de quem estuda.
 
-Fontes do conteÃºdo: [OSWork v6.2](https://inematds.github.io/oswork-v62/), [OSWork Quick](https://inematds.github.io/oswork-quick/), [exercÃ­cios do degrau 1](https://github.com/inematds/jornada-agentes/blob/main/exercicios/01-oswork.md) e a [Ã¡rea OSWork](https://eventos.inema.pro/oswork/). VÃ­deos jÃ¡ publicados: sÃ©rie jornada-agentes (`video-v2.0.0`) e [OSWork comando por comando](https://inematds.github.io/oswork-terminal/videos/).
+Fontes do conteÃºdo: [OSWork v6.2](https://linnoff88-dev.github.io/ [OSWork Quick](https://linnoff88-dev.github.io/ [exercÃ­cios do degrau 1](https://github.com/linnoff88-dev/jornada-agentes/blob/main/exercicios/01-oswork.md) e a [Ã¡rea OSWork](https://eventos.ARCKHÉ.pro/oswork/). VÃ­deos jÃ¡ publicados: sÃ©rie jornada-agentes (`video-v2.0.0`) e [OSWork comando por comando](https://linnoff88-dev.github.io/
 
-ConteÃºdo aberto e gratuito Â· [INEMA.CLUB](https://inema.club)
+ConteÃºdo aberto e gratuito Â· [ARCKHÉ AI](https://ARCKHÉ AI)
 
-## Mais no INEMA.CLUB
+## Mais no ARCKHÉ AI
 
-- [Ficha completa deste curso](https://www.inema.club/cursos/324-do-chat-ao-agente-degrau-1-o-terminal-pasta-regras-segredos-git-e-vps/)
-- [Guia: como aprender inteligÃªncia artificial](https://www.inema.club/aprender-inteligencia-artificial/)
-- [Todos os cursos](https://www.inema.club/cursos/)
+- [Ficha completa deste curso](https://www.ARCKHÉ AI/cursos/324-do-chat-ao-agente-degrau-1-o-terminal-pasta-regras-segredos-git-e-vps/)
+- [Guia: como aprender inteligÃªncia artificial](https://www.ARCKHÉ AI/aprender-inteligencia-artificial/)
+- [Todos os cursos](https://www.ARCKHÉ AI/cursos/)
 
 ---
 

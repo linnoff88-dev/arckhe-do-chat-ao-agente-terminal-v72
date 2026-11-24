@@ -243,9 +243,9 @@
       "tipo": "links",
       "titulo": "Para aprofundar",
       "links": [
-        {"t": "Visão geral: os quatro degraus da formação", "href": "https://inematds.github.io/do-chat-ao-agente-v72/", "icone": "camadas"},
-        {"t": "OSWork Quick: a cola de comandos completa", "href": "https://inematds.github.io/oswork-quick/materiais/", "icone": "lista"},
-        {"t": "Área OSWork no Eventos", "href": "https://eventos.inema.pro/oswork/", "icone": "terminal"}
+        {"t": "Visão geral: os quatro degraus da formação", "href": "https://linnoff88-dev.github.io/ "icone": "camadas"},
+        {"t": "OSWork Quick: a cola de comandos completa", "href": "https://linnoff88-dev.github.io/ "icone": "lista"},
+        {"t": "Área OSWork no Eventos", "href": "https://eventos.ARCKHÉ.pro/oswork/", "icone": "terminal"}
       ]
     }
   ]

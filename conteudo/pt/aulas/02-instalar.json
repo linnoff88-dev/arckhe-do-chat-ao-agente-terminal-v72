@@ -216,8 +216,8 @@
       "tipo": "links",
       "titulo": "Para aprofundar",
       "links": [
-        {"t": "OSWork Quick: parte 1, seu computador", "href": "https://inematds.github.io/oswork-quick/", "icone": "terminal"},
-        {"t": "OSWork v6.2: terminal e Codex na prática, passo a passo", "href": "https://inematds.github.io/oswork-v62/", "icone": "lista"}
+        {"t": "OSWork Quick: parte 1, seu computador", "href": "https://linnoff88-dev.github.io/ "icone": "terminal"},
+        {"t": "OSWork v6.2: terminal e Codex na prática, passo a passo", "href": "https://linnoff88-dev.github.io/ "icone": "lista"}
       ]
     }
   ]
