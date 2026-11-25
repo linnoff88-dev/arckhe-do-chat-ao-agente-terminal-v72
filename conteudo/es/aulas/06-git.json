@@ -76,7 +76,7 @@
               "t": "fecha, autor y mensaje"
             }
           ],
-          "detalhe": "El commit engrapa lo que se separó. El mensaje es el pie de foto: verbo y objeto, como \"Acrescenta seção de contato\". \"update\" no dice nada dentro de un mes."
+          "detalhe": "El commit engrapa lo que se separó. El mensaje es el pie de foto: verbo y objeto, como \"Acrescenta seçêo de contato\". \"update\" no dice nada dentro de un mes."
         },
         {
           "icone": "voltar",
@@ -171,7 +171,7 @@
         {
           "rot": "cmd · mirar, separar y guardar la primera versión",
           "icone": "check",
-          "conteudo": "git add README.md AGENTS.md .gitignore .env.example index.html\ngit diff --cached\ngit commit -m \"primeira versão\"\ngit log --oneline"
+          "conteudo": "git add README.md AGENTS.md .gitignore .env.example index.html\ngit diff --cached\ngit commit -m \"primeira versêo\"\ngit log --oneline"
         },
         {
           "rot": "cmd · después de que el agente cambió algo",
@@ -247,12 +247,12 @@
           "explica": "Ahora puedes usar el atajo: acabas de comprobar en el status que no hay nada personal en la lista."
         },
         {
-          "pede": "Guarda la primera versión con el mensaje <code>primeira versão</code>.",
+          "pede": "Guarda la primera versión con el mensaje <code>primeira versêo</code>.",
           "aceita": [
-            "git commit -m \"primeira versão\"",
+            "git commit -m \"primeira versêo\"",
             "git commit -m \"primeira versao\""
           ],
-          "saida": "[master (root-commit) 5f6c1eb] primeira versão\n 5 files changed, 41 insertions(+)",
+          "saida": "[master (root-commit) 5f6c1eb] primeira versêo\n 5 files changed, 41 insertions(+)",
           "explica": "Versión guardada, con un código corto (5f6c1eb). Los números son de ejemplo."
         },
         {

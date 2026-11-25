@@ -6,7 +6,7 @@
   "menu": "Folder",
   "minutos": 16,
   "lead": "When everything sits in a single folder, the AI reads material that has nothing to do with your request and you don't know where each sentence came from. One folder per subject, with one file for people and another for the agent, fixes this before the first request.",
-  "objetivo": "set up the projetos/config tree and the project folder with entradas, saídas, README.md and AGENTS.md in Markdown.",
+  "objetivo": "set up the projetos/config tree and the project folder with entradas, saê­das, README.md and AGENTS.md in Markdown.",
   "hero_alt": "Open steel filing cabinet with labeled hanging folders and a notebook in the background.",
   "competencias": [
     "estruturar-pasta-agente",
@@ -91,7 +91,7 @@
               "t": "entradas / saidas"
             }
           ],
-          "detalhe": "Entradas is what the AI reads; saídas is what it produces, for you to review. Kept apart, you can check one against the other. Don't mix in material from another client or another class here.",
+          "detalhe": "Entradas is what the AI reads; saê­das is what it produces, for you to review. Kept apart, you can check one against the other. Don't mix in material from another client or another class here.",
           "forte": true
         },
         {
@@ -132,14 +132,14 @@
           ],
           "exemplo": {
             "rot": "In the file",
-            "texto": "# Feira de ciências  ## Materiais  - algodão e um copo"
+            "texto": "# Feira de ciências  ## Materiais  - algodêo e um copo"
           }
         },
         {
           "titulo": "README",
           "sub": "For whoever arrives later",
           "texto": [
-            "It says what the project is for and how to check the result. Five sections: Propósito, Leia primeiro, Organização, Como verificar and Estado atual.",
+            "It says what the project is for and how to check the result. Five sections: Propê³sito, Leia primeiro, Organizaê§êo, Como verificar and Estado atual.",
             "Don't know a field yet? Write \"a definir\". An honest open field is worth more than template text nobody checked."
           ],
           "exemplo": {
@@ -164,7 +164,7 @@
           "sub": "notepad and type",
           "texto": [
             "<code>notepad README.md</code> opens the file in Notepad; Ctrl+S saves it. <code>type README.md</code> shows in cmd what was saved.",
-            "Swapped accents in cmd, like Ã§ in place of ç, are only the screen; the file is fine."
+            "Swapped accents in cmd, like êÂ§ in place of ê§, are only the screen; the file is fine."
           ],
           "exemplo": {
             "rot": "On Mac and Linux",
@@ -179,7 +179,7 @@
       "sub": "Create the folders in cmd and paste the templates into Notepad. Replace whatever is between < >.",
       "blocos": [
         {
-          "rot": "cmd · the folders",
+          "rot": "cmd Â· the folders",
           "icone": "pasta",
           "conteudo": "cd %USERPROFILE%\\projetos\nmkdir config\ncd meu-primeiro-agente\nmkdir entradas\nmkdir saidas\ndir /b"
         },
@@ -194,7 +194,7 @@
           "conteudo": "# Who I am\n<your name, your profession, who you work for>\n\n# Rules for this project\n- Write in English, short sentences.\n- Work only inside this folder. Do not delete files without asking.\n- Before you finish, tell me what changed and how I can check it.\n\n# What is here\n- entradas/: material you can read\n- saidas/: where you deliver the drafts"
         },
         {
-          "rot": "cmd · create, edit and check",
+          "rot": "cmd Â· create, edit and check",
           "icone": "terminal",
           "conteudo": "notepad README.md\nnotepad AGENTS.md\ntype AGENTS.md"
         }
@@ -204,7 +204,7 @@
         "abas": [
           {
             "rot": "The finished tree",
-            "html": "<pre>C:\\Users\\ana\\projetos\n├─ config\n└─ meu-primeiro-agente\n   ├─ AGENTS.md\n   ├─ README.md\n   ├─ entradas\n   └─ saidas</pre><p>Notepad asks if you want to create the new file: answer Yes. Save with Ctrl+S and close.</p>"
+            "html": "<pre>C:\\Users\\ana\\projetos\nââ config\nââ meu-primeiro-agente\n   ââ AGENTS.md\n   ââ README.md\n   ââ entradas\n   ââ saidas</pre><p>Notepad asks if you want to create the new file: answer Yes. Save with Ctrl+S and close.</p>"
           },
           {
             "rot": "Common mistakes",
@@ -217,7 +217,7 @@
       "tipo": "simterm",
       "titulo": "Rehearse: build the tree",
       "sub": "Create the folders and check, just like on your computer.",
-      "janela": "Command Prompt · simulation",
+      "janela": "Command Prompt Â· simulation",
       "sistema": "windows",
       "inicio": "C:\\Users\\ana\\projetos",
       "sufixo": ">",
@@ -256,7 +256,7 @@
             "md saidas"
           ],
           "saida": "",
-          "explica": "Saídas: what it produces, for you to review."
+          "explica": "Saê­das: what it produces, for you to review."
         },
         {
           "pede": "Open AGENTS.md in Notepad.",
@@ -281,7 +281,7 @@
             "type AGENTS.md",
             "type agents.md"
           ],
-          "saida": "# Who I am\nAna, HR consultant\n\n# Rules for this project\n- Write in English, short sentences.\n…",
+          "saida": "# Who I am\nAna, HR consultant\n\n# Rules for this project\n- Write in English, short sentences.\nâ¦",
           "explica": "<code>type</code> shows what was saved. It is your check after editing."
         }
       ],
@@ -295,14 +295,14 @@
       "exercicios": [
         {
           "id": "e1",
-          "titulo": "E5 · The tree and the README",
+          "titulo": "E5 Â· The tree and the README",
           "min": "15 min",
           "texto": "Draw the tree on paper, create config, entradas and saidas from the cmd, and write the README with the five sections.",
           "pronto": "<code>dir /b</code> shows entradas, saidas and README.md, and each README section has real information or \"to be defined\"."
         },
         {
           "id": "e2",
-          "titulo": "E6 · The employee manual",
+          "titulo": "E6 Â· The employee manual",
           "min": "15 min",
           "texto": "Create AGENTS.md with who you are, the project rules and what is in the folder.",
           "pronto": "<code>type AGENTS.md</code> shows at least three rules of yours, written by you."

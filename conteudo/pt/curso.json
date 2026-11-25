@@ -3,9 +3,9 @@
   "lang": "pt-BR",
   "url": "https://linnoff88-dev.github.io/
   "nome": "Do chat para o terminal",
-  "sub": "Degrau 1 da formação Do chat ao agente",
+  "sub": "Degrau 1 da formaçêo Do chat ao agente",
   "volta": {
-    "t": "Visão geral: Do chat ao agente",
+    "t": "Visêo geral: Do chat ao agente",
     "href": "https://linnoff88-dev.github.io/
   },
   "lado_card": {
@@ -15,7 +15,7 @@
     "link": "Abrir a cola do OSWork",
     "href": "https://linnoff88-dev.github.io/ "href_en": "https://linnoff88-dev.github.io/ "href_es": "https://linnoff88-dev.github.io/
   },
-  "rodape": "ARCKHÉ AI · conteúdo aberto e gratuito · formato ARCKHÉ Learning v7.2 · <a href=\"https://linnoff88-dev.github.io/ geral da formação Do chat ao agente</a> · <a href=\"https://eventos.ARCKHÉ.pro/oswork/\">eventos.ARCKHÉ.pro/oswork</a> · <a href=\"https://ARCKHÉ AI/\">ARCKHÉ AI</a> · <a href=\"https://www.ARCKHÉ AI/aprender-inteligencia-artificial/\">Guia: como aprender inteligência artificial</a> · <a href=\"https://www.ARCKHÉ AI/cursos/324-do-chat-ao-agente-degrau-1-o-terminal-pasta-regras-segredos-git-e-vps/\">Ficha completa deste curso no ARCKHÉ AI</a>",
+  "rodape": "ARCKHÉ AI · conteúdo aberto e gratuito · formato ARCKHÉ Learning v7.2 · <a href=\"https://linnoff88-dev.github.io/ geral da formaçêo Do chat ao agente</a> · <a href=\"https://eventos.ARCKHÉ.pro/oswork/\">eventos.ARCKHÉ.pro/oswork</a> · <a href=\"https://ARCKHÉ AI/\">ARCKHÉ AI</a> · <a href=\"https://www.ARCKHÉ AI/aprender-inteligencia-artificial/\">Guia: como aprender inteligência artificial</a> · <a href=\"https://www.ARCKHÉ AI/cursos/324-do-chat-ao-agente-degrau-1-o-terminal-pasta-regras-segredos-git-e-vps/\">Ficha completa deste curso no ARCKHÉ AI</a>",
   "videos": {
     "seq1-oswork": {
       "titulo": "Do chat para o terminal",
@@ -34,7 +34,7 @@
       "pagina": "https://linnoff88-dev.github.io/ "idiomas": {"en": {"mp4": "https://github.com/linnoff88-dev/oswork-terminal/releases/download/video-v2.0.0/oswork-terminal-completo-16x9-en.mp4", "vtt": "assets/vtt/oswork-terminal-en.vtt", "duracao": "5 min 41 s", "pagina": "https://linnoff88-dev.github.io/ "es": {"mp4": "https://github.com/linnoff88-dev/oswork-terminal/releases/download/video-v2.0.0/oswork-terminal-completo-16x9-es.mp4", "vtt": "assets/vtt/oswork-terminal-es.vtt", "duracao": "6 min 43 s", "pagina": "https://linnoff88-dev.github.io/
     },
     "jornada-ia": {
-      "titulo": "Do chat ao agente: a visão geral",
+      "titulo": "Do chat ao agente: a visêo geral",
       "duracao": "2 min 27 s",
       "mp4": "https://github.com/linnoff88-dev/jornada-agentes/releases/download/video-v2.0.0/jornada-jornada-ia-16x9.mp4",
       "vtt": "assets/vtt/jornada-ia.vtt",
@@ -45,13 +45,13 @@
   "inicio": {
     "kicker": "Curso completo · degrau 1 de 4 · 8 aulas",
     "titulo": "Do chat para o terminal: o agente trabalhando numa pasta sua",
-    "lead": "Abrir o terminal sem medo, instalar o agente da fonte oficial, montar a pasta com regras, guardar cada versão com o Git, manter as chaves fora do texto e pôr a sua página no ar. Comando por comando, com o que conferir em cada passo.",
+    "lead": "Abrir o terminal sem medo, instalar o agente da fonte oficial, montar a pasta com regras, guardar cada versêo com o Git, manter as chaves fora do texto e pôr a sua página no ar. Comando por comando, com o que conferir em cada passo.",
     "cta": "Começar pela aula 1",
     "cta2": {
-      "t": "Voltar à visão geral da formação",
+      "t": "Voltar à visêo geral da formaçêo",
       "href": "https://linnoff88-dev.github.io/
     },
-    "capa_alt": "Notebook com o terminal aberto ao lado de um caderno com a árvore de pastas desenhada à mão.",
+    "capa_alt": "Notebook com o terminal aberto ao lado de um caderno com a árvore de pastas desenhada à mêo.",
     "numeros": [
       {
         "v": "8",
@@ -59,7 +59,7 @@
       },
       {
         "v": "42",
-        "t": "modelos com botão copiar"
+        "t": "modelos com botêo copiar"
       },
       {
         "v": "6",
@@ -77,7 +77,7 @@
         "t": "Para quem é",
         "itens": [
           "Quem usa ChatGPT, Claude ou Gemini no navegador e nunca abriu um terminal.",
-          "Quem já viu a visão geral da formação e quer fazer o degrau 1 de verdade, com todos os comandos.",
+          "Quem já viu a visêo geral da formaçêo e quer fazer o degrau 1 de verdade, com todos os comandos.",
           "Quem vai orientar equipe ou cliente e precisa saber conferir o que o agente fez."
         ]
       },
@@ -106,7 +106,7 @@
     "dg_dica": "Clique em cada bloco do diagrama para ver o que ele faz.",
     "copiar": "Copiar",
     "copiado": "Copiado",
-    "selo_simulacao": "Simulação: exemplo ilustrativo",
+    "selo_simulacao": "Simulaçêo: exemplo ilustrativo",
     "selo_real": "Exemplo do repositório",
     "pronto_quando": "Pronto quando:",
     "fiz": "Fiz este exercício",
@@ -115,8 +115,8 @@
     "de": "de",
     "cert_tag": "competência",
     "correto": "Correto",
-    "errado": "Não é essa",
-    "quiz_aguarda": "Escolha uma alternativa. A explicação aparece depois da sua tentativa.",
+    "errado": "Nêo é essa",
+    "quiz_aguarda": "Escolha uma alternativa. A explicaçêo aparece depois da sua tentativa.",
     "proxima_pergunta": "Próxima pergunta",
     "quiz_ver": "Ver resultado",
     "quiz_fim": "Teste concluído",
@@ -143,7 +143,7 @@
     "baixar_ics": "Baixar para o calendário (.ics)",
     "ind_estudo": "Estudo (aulas)",
     "ind_pratica": "Prática declarada",
-    "ind_nota": "Prática = exercícios que você marcou como feitos. A comprovação vem na prova da certificação.",
+    "ind_nota": "Prática = exercícios que você marcou como feitos. A comprovaçêo vem na prova da certificaçêo.",
     "estudo": {
       "titulo": "Seu estudo",
       "continuar": "Continuar de onde parei",
@@ -156,7 +156,7 @@
       "notas": "Minhas anotações",
       "dados": "Copiar meus dados",
       "sem_testes": "Nenhum teste feito ainda. O teste fica no fim de cada aula.",
-      "nao_fez": "teste ainda não feito",
+      "nao_fez": "teste ainda nêo feito",
       "ultimo": "Último",
       "melhor": "Melhor",
       "tentativas": "tentativas",
@@ -165,21 +165,21 @@
       "rever": "Para rever",
       "resposta": "Resposta certa:",
       "ir_teste": "Refazer o teste",
-      "sem_notas": "Nenhuma anotação ainda. Na aula, selecione um trecho do texto e toque em Marcar ou Anotar.",
+      "sem_notas": "Nenhuma anotaçêo ainda. Na aula, selecione um trecho do texto e toque em Marcar ou Anotar.",
       "so_marcado": "(só marcado)",
       "marcar": "Marcar",
       "anotar": "Anotar",
       "salvar": "Salvar",
       "apagar": "Apagar marca",
       "fechar": "Fechar",
-      "nota_ph": "Escreva sua anotação sobre este trecho…",
+      "nota_ph": "Escreva sua anotaçêo sobre este trecho…",
       "um_bloco": "Marque dentro de um parágrafo só.",
-      "nao_marca": "Este trecho não pode ser marcado.",
-      "dados_exp": "Seu progresso, suas anotações e as notas dos testes ficam só neste navegador. Baixe uma cópia (.json) para guardar ou para continuar em outro computador ou navegador; lá, carregue a cópia. Carregar soma com o que já existe e não apaga nada.",
+      "nao_marca": "Este trecho nêo pode ser marcado.",
+      "dados_exp": "Seu progresso, suas anotações e as notas dos testes ficam só neste navegador. Baixe uma cópia (.json) para guardar ou para continuar em outro computador ou navegador; lá, carregue a cópia. Carregar soma com o que já existe e nêo apaga nada.",
       "exportar": "Baixar cópia",
       "importar": "Carregar cópia",
       "import_ok": "Cópia carregada ({n} itens). Atualizando a página…",
-      "import_erro": "Arquivo não reconhecido. Nada foi alterado.",
+      "import_erro": "Arquivo nêo reconhecido. Nada foi alterado.",
       "import_outro": "Esta cópia é de outro curso. Nada foi alterado.",
       "export_ok": "Cópia baixada."
     },
@@ -187,11 +187,11 @@
     "st_digite": "Digite o comando e tecle Enter",
     "st_dica": "Mostrar o comando",
     "st_zerar": "Recomeçar",
-    "st_missao": "Missão {n} de {t}:",
+    "st_missao": "Missêo {n} de {t}:",
     "st_cumpridas": "Missões cumpridas.",
     "st_pronto": "Pronto.",
-    "st_onde": "Isso mostrou onde você está. Agora faça o que a missão {n} pede.",
-    "st_errado": "Esse não é o comando da missão {n}. Releia o pedido ou toque em <b>{dica}</b>."
+    "st_onde": "Isso mostrou onde você está. Agora faça o que a missêo {n} pede.",
+    "st_errado": "Esse nêo é o comando da missêo {n}. Releia o pedido ou toque em <b>{dica}</b>."
   },
   "icone": "terminal"
 }

@@ -5,7 +5,7 @@
   "titulo_curto": "GitHub, Pages e VPS",
   "menu": "Publicar",
   "minutos": 20,
-  "lead": "Salvar, enviar e pôr no ar são três passos e três decisões. Com uma chave SSH e o gh, você envia o projeto ao GitHub, publica a página com um endereço que abre no celular e leva a mesma pasta para uma VPS, onde o agente trabalha mesmo com o seu computador desligado.",
+  "lead": "Salvar, enviar e pôr no ar sêo três passos e três decisões. Com uma chave SSH e o gh, você envia o projeto ao GitHub, publica a página com um endereço que abre no celular e leva a mesma pasta para uma VPS, onde o agente trabalha mesmo com o seu computador desligado.",
   "objetivo": "ligar o terminal ao GitHub com chave SSH, publicar a página no GitHub Pages e clonar o projeto numa VPS.",
   "hero_alt": "Notebook com o terminal aberto e um celular ao lado mostrando uma página publicada; servidores ao fundo.",
   "competencias": ["publicar-no-github", "conferir-antes-do-push", "operar-vps-basico"],
@@ -26,7 +26,7 @@
           "titulo": "Seu computador",
           "sub": "Onde você trabalha",
           "itens": [{"icone": "cadeado", "t": "id_ed25519 (privada)"}, {"icone": "git", "t": "commit"}],
-          "detalhe": "A chave privada nunca sai daqui. O commit guarda a versão só no seu computador; nada vai para a internet até você decidir enviar."
+          "detalhe": "A chave privada nunca sai daqui. O commit guarda a versêo só no seu computador; nada vai para a internet até você decidir enviar."
         },
         {
           "icone": "git",
@@ -48,7 +48,7 @@
           "titulo": "VPS",
           "sub": "Um computador alugado, ligado o tempo todo",
           "itens": [{"icone": "terminal", "t": "git clone / git pull"}, {"icone": "robo", "t": "o agente também roda lá"}],
-          "detalhe": "Uma sala alugada: o provedor entrega a máquina; usuários, atualizações e programas são com você. Você entra pelo ssh, navega com os nomes do Linux e traz o projeto do GitHub."
+          "detalhe": "Uma sala alugada: o provedor entrega a máquina; usuários, atualizações e programas sêo com você. Você entra pelo ssh, navega com os nomes do Linux e traz o projeto do GitHub."
         }
       ],
       "volta": "Mudou no computador → push → git pull na VPS",
@@ -56,7 +56,7 @@
       "rolagem": true,
       "rolagem_fim": {
         "titulo": "Salvar, enviar, pôr no ar",
-        "texto": "O commit fica no seu computador, o push leva ao GitHub e o Pages põe no ar. A VPS pega a mesma versão com git pull. Cada passo é uma decisão sua, com conferência própria."
+        "texto": "O commit fica no seu computador, o push leva ao GitHub e o Pages põe no ar. A VPS pega a mesma versêo com git pull. Cada passo é uma decisêo sua, com conferência própria."
       }
     },
     {
@@ -98,7 +98,7 @@
             "<code>ssh root@IP-DA-VPS</code> abre o terminal da VPS na sua janela. O começo da linha muda e termina em <code>#</code> ou <code>$</code>: olhe sempre em que máquina está antes de cada comando.",
             "Lá: <code>ls</code> no lugar de <code>dir</code>, <code>pwd</code> no lugar de <code>cd</code> sozinho, e maiúscula importa."
           ],
-          "exemplo": {"rot": "Regra da segunda sessão", "texto": "Mudou o jeito de entrar? Teste numa janela nova antes de fechar a que funciona."}
+          "exemplo": {"rot": "Regra da segunda sessêo", "texto": "Mudou o jeito de entrar? Teste numa janela nova antes de fechar a que funciona."}
         }
       ]
     },
@@ -169,24 +169,24 @@
     {
       "tipo": "simterm",
       "titulo": "Ensaie: o projeto na VPS",
-      "sub": "Mesma navegação, outros nomes. Olhe o começo da linha.",
-      "janela": "VPS Ubuntu · simulação",
+      "sub": "Mesma navegaçêo, outros nomes. Olhe o começo da linha.",
+      "janela": "VPS Ubuntu · simulaçêo",
       "sistema": "linux",
       "inicio": "C:\\Users\\ana>",
       "sufixo": "",
       "missoes": [
         {"pede": "Entre na VPS como root (o IP de exemplo é <code>203.0.113.10</code>).", "aceita": ["ssh root@203.0.113.10"], "saida": "Welcome to Ubuntu", "vai": "root@minha-vps:~#", "explica": "O começo da linha mudou: agora quem responde é o Linux da VPS. Mesma janela, outra máquina."},
         {"pede": "Pergunte onde você está (no Linux é <code>pwd</code>).", "aceita": ["pwd"], "saida": "/root", "explica": "<code>pwd</code> faz o papel do <code>cd</code> sozinho do cmd."},
-        {"pede": "Crie a pasta de projetos (<code>mkdir -p ~/projetos</code>).", "aceita": ["mkdir -p ~/projetos", "mkdir -p projetos", "mkdir ~/projetos", "mkdir projetos"], "saida": "", "explica": "O <code>-p</code> cria e não reclama se já existir. O <code>~</code> é a pasta pessoal, como o %USERPROFILE%."},
+        {"pede": "Crie a pasta de projetos (<code>mkdir -p ~/projetos</code>).", "aceita": ["mkdir -p ~/projetos", "mkdir -p projetos", "mkdir ~/projetos", "mkdir projetos"], "saida": "", "explica": "O <code>-p</code> cria e nêo reclama se já existir. O <code>~</code> é a pasta pessoal, como o %USERPROFILE%."},
         {"pede": "Entre nela.", "aceita": ["cd ~/projetos", "cd projetos"], "saida": "", "vai": "root@minha-vps:~/projetos#", "explica": "O caminho antes do # mostra ~/projetos."},
-        {"pede": "Traga o projeto do GitHub (usuário <code>ana-exemplo</code>).", "aceita": ["git clone https://github.com/ana-exemplo/meu-primeiro-agente.git", "git clone https://github.com/ana-exemplo/meu-primeiro-agente"], "saida": "Cloning into 'meu-primeiro-agente'...", "explica": "O clone traz a pasta e todo o histórico. Clonar não executa nada."},
+        {"pede": "Traga o projeto do GitHub (usuário <code>ana-exemplo</code>).", "aceita": ["git clone https://github.com/ana-exemplo/meu-primeiro-agente.git", "git clone https://github.com/ana-exemplo/meu-primeiro-agente"], "saida": "Cloning into 'meu-primeiro-agente'...", "explica": "O clone traz a pasta e todo o histórico. Clonar nêo executa nada."},
         {"pede": "Entre na pasta e liste o conteúdo (dois comandos: primeiro o <code>cd</code>).", "aceita": ["cd meu-primeiro-agente"], "saida": "", "vai": "root@minha-vps:~/projetos/meu-primeiro-agente#", "explica": "Agora liste."},
-        {"pede": "Liste o que veio (no Linux é <code>ls</code>).", "aceita": ["ls"], "saida": "AGENTS.md  README.md  entradas  index.html  saidas", "explica": "Os mesmos arquivos do seu Windows. O .env não veio, porque nunca foi para o GitHub."},
-        {"pede": "Você mudou algo no Windows e deu push. Traga a mudança.", "aceita": ["git pull"], "saida": "Updating 5f6c1eb..33113cd\nFast-forward\n index.html | 3 ++-", "explica": "O GitHub é a ponte: a versão nova chegou à VPS."},
+        {"pede": "Liste o que veio (no Linux é <code>ls</code>).", "aceita": ["ls"], "saida": "AGENTS.md  README.md  entradas  index.html  saidas", "explica": "Os mesmos arquivos do seu Windows. O .env nêo veio, porque nunca foi para o GitHub."},
+        {"pede": "Você mudou algo no Windows e deu push. Traga a mudança.", "aceita": ["git pull"], "saida": "Updating 5f6c1eb..33113cd\nFast-forward\n index.html | 3 ++-", "explica": "O GitHub é a ponte: a versêo nova chegou à VPS."},
         {"pede": "Saia da VPS.", "aceita": ["exit"], "saida": "Connection to 203.0.113.10 closed.", "vai": "C:\\Users\\ana>", "explica": "De volta ao seu computador: o começo da linha voltou a ser C:\\Users\\ana."}
       ],
       "fim": "Projeto levado à VPS e atualizado. Na vida real, o agente roda lá dentro com o mesmo AGENTS.md.",
-      "legenda": "Simulação: IP, usuário e códigos são de exemplo (203.0.113.10 é um endereço reservado para documentação)."
+      "legenda": "Simulaçêo: IP, usuário e códigos sêo de exemplo (203.0.113.10 é um endereço reservado para documentaçêo)."
     },
     {
       "tipo": "pratica",
@@ -258,8 +258,8 @@
       "itens": [
         {"t": "Saiba onde está", "texto": "Antes de qualquer comando, olhe o caminho antes do &gt;. Pasta errada parece falha da IA."},
         {"t": "Pasta com regras", "texto": "Um assunto por pasta, README para pessoas, AGENTS.md com regras que dá para conferir."},
-        {"t": "Rede de segurança", "texto": "Segredo no .env e fora do Git; commit antes de mudança grande; restore quando não gostar."},
-        {"t": "Você decide", "texto": "Salvar, enviar e pôr no ar são três passos. O agente trabalha; quem confere e aprova é você."}
+        {"t": "Rede de segurança", "texto": "Segredo no .env e fora do Git; commit antes de mudança grande; restore quando nêo gostar."},
+        {"t": "Você decide", "texto": "Salvar, enviar e pôr no ar sêo três passos. O agente trabalha; quem confere e aprova é você."}
       ]
     },
     {
@@ -276,10 +276,10 @@
           "ref": "codigo"
         },
         {
-          "p": "Você deu <code>git commit</code>. A versão já está no GitHub?",
-          "opcoes": ["Não: commit salva no seu computador; quem envia é o git push.", "Só se o repositório for público.", "Sim, depois de alguns minutos.", "Sim, o commit envia."],
+          "p": "Você deu <code>git commit</code>. A versêo já está no GitHub?",
+          "opcoes": ["Nêo: commit salva no seu computador; quem envia é o git push.", "Só se o repositório for público.", "Sim, depois de alguns minutos.", "Sim, o commit envia."],
           "certa": 0,
-          "explica": "Salvar, enviar e pôr no ar são três passos separados: commit, push e Pages.",
+          "explica": "Salvar, enviar e pôr no ar sêo três passos separados: commit, push e Pages.",
           "ref": "diagrama"
         },
         {
@@ -302,7 +302,7 @@
       "tipo": "links",
       "titulo": "Próximos passos",
       "links": [
-        {"t": "Voltar à visão geral: Do chat ao agente (degraus 2, 3 e 4)", "href": "https://linnoff88-dev.github.io/ "icone": "camadas"},
+        {"t": "Voltar à visêo geral: Do chat ao agente (degraus 2, 3 e 4)", "href": "https://linnoff88-dev.github.io/ "icone": "camadas"},
         {"t": "Vídeo: OSWork na prática, comando por comando", "href": "https://linnoff88-dev.github.io/ "icone": "video"},
         {"t": "OSWork Quick: cola de comandos", "href": "https://linnoff88-dev.github.io/ "icone": "lista"},
         {"t": "OSWork v6.2: o curso completo em 49 aulas", "href": "https://linnoff88-dev.github.io/ "icone": "terminal"},

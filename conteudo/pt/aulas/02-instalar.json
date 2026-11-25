@@ -5,9 +5,9 @@
   "titulo_curto": "Instalar e entrar",
   "menu": "Instalar",
   "minutos": 18,
-  "lead": "Colocar o programa, entrar com a conta e abrir na pasta são três etapas diferentes, cada uma com a sua conferência. O comando vem da página oficial, a conta é a sua assinatura e nenhuma senha passa pelo terminal.",
-  "objetivo": "instalar Git, gh, Node e o agente (Claude Code ou Codex) pelo cmd e confirmar versão e método de entrada.",
-  "hero_alt": "Mão conferindo a etiqueta de uma caixa lacrada ao lado de um notebook com o terminal aberto.",
+  "lead": "Colocar o programa, entrar com a conta e abrir na pasta sêo três etapas diferentes, cada uma com a sua conferência. O comando vem da página oficial, a conta é a sua assinatura e nenhuma senha passa pelo terminal.",
+  "objetivo": "instalar Git, gh, Node e o agente (Claude Code ou Codex) pelo cmd e confirmar versêo e método de entrada.",
+  "hero_alt": "Mêo conferindo a etiqueta de uma caixa lacrada ao lado de um notebook com o terminal aberto.",
   "competencias": ["instalar-ferramentas", "conferir-fonte-oficial", "entrar-pela-assinatura"],
   "aprende": [
     {"icone": "baixar", "t": "Instalar Git, GitHub CLI e Node com o winget"},
@@ -27,7 +27,7 @@
           "titulo": "Colocar o programa",
           "sub": "winget e o instalador oficial",
           "itens": [{"icone": "terminal", "t": "winget install …"}, {"icone": "check", "t": "confere: --version"}],
-          "detalhe": "Instalar põe o programa no computador. Isso ainda não conecta a sua conta nem escolhe a pasta. Depois de instalar, feche o cmd e abra de novo: só a janela nova enxerga o programa que chegou."
+          "detalhe": "Instalar põe o programa no computador. Isso ainda nêo conecta a sua conta nem escolhe a pasta. Depois de instalar, feche o cmd e abra de novo: só a janela nova enxerga o programa que chegou."
         },
         {
           "icone": "cadeado",
@@ -45,11 +45,11 @@
           "detalhe": "O agente trabalha na pasta em que foi aberto. Na primeira vez numa pasta ele pergunta se você confia nela: é a sua pasta de treino, confirme. Para sair, <code>/quit</code> no Codex ou <code>/exit</code> no Claude Code."
         }
       ],
-      "legenda": "Logo depois de instalar, abrir o agente e ver o pedido de login não é defeito: a etapa 1 deu certo e falta a 2.",
+      "legenda": "Logo depois de instalar, abrir o agente e ver o pedido de login nêo é defeito: a etapa 1 deu certo e falta a 2.",
       "rolagem": true,
       "rolagem_fim": {
         "titulo": "Uma etapa de cada vez",
-        "texto": "Instalou, confere a versão. Entrou, confere o método. Abriu, confere a pasta. Se algo falhar, você sabe exatamente em qual das três parou."
+        "texto": "Instalou, confere a versêo. Entrou, confere o método. Abriu, confere a pasta. Se algo falhar, você sabe exatamente em qual das três parou."
       }
     },
     {
@@ -62,7 +62,7 @@
           "sub": "Leia o nome dentro do comando",
           "texto": [
             "Na internet circulam comandos \"mais rápidos\". Um comando colado sem conferir pode executar qualquer coisa.",
-            "Leia o remetente: <code>Git.Git</code>, <code>GitHub.cli</code>, <code>OpenJS.NodeJS.LTS</code>, <code>@openai/codex</code>, <code>claude.ai/install.cmd</code>. Nome diferente, de página desconhecida, não se cola."
+            "Leia o remetente: <code>Git.Git</code>, <code>GitHub.cli</code>, <code>OpenJS.NodeJS.LTS</code>, <code>@openai/codex</code>, <code>claude.ai/install.cmd</code>. Nome diferente, de página desconhecida, nêo se cola."
           ],
           "exemplo": {"rot": "Sinal de alerta", "texto": "Um pacote com \"codex\" no nome, mas sem o @openai/ na frente."}
         },
@@ -70,7 +70,7 @@
           "titulo": "Esperar o >",
           "sub": "Um comando por vez",
           "texto": [
-            "Cole um comando, espere terminar e o <code>&gt;</code> voltar. As linhas que passam você não precisa entender.",
+            "Cole um comando, espere terminar e o <code>&gt;</code> voltar. As linhas que passam você nêo precisa entender.",
             "Na primeira vez, o winget pode perguntar se você aceita os termos da origem: digite Y e Enter."
           ],
           "exemplo": {"rot": "O que aparece", "texto": "Instalado com êxito"}
@@ -79,14 +79,14 @@
           "titulo": "Reabrir e conferir",
           "sub": "--version",
           "texto": [
-            "Feche o cmd e abra de novo. Então <code>git --version</code>, <code>gh --version</code> e <code>claude --version</code> ou <code>codex --version</code> respondem um número.",
-            "\"Não é reconhecido como um comando interno ou externo\" quase sempre é só a janela velha."
+            "Feche o cmd e abra de novo. Entêo <code>git --version</code>, <code>gh --version</code> e <code>claude --version</code> ou <code>codex --version</code> respondem um número.",
+            "\"Nêo é reconhecido como um comando interno ou externo\" quase sempre é só a janela velha."
           ],
           "exemplo": {"rot": "Regra", "texto": "Instalou? Feche e abra o cmd antes de conferir."}
         },
         {
           "titulo": "Método de entrada",
-          "sub": "Conta, não chave",
+          "sub": "Conta, nêo chave",
           "texto": [
             "Na primeira vez que abre, o agente pede para entrar: use a sua assinatura. No Codex, <code>codex login</code> abre o navegador e <code>codex login status</code> diz por qual caminho você entrou.",
             "Na ficha do projeto vai o método (\"conta\" ou \"API\"). A chave em si nunca vai para ficha, pedido ou print."
@@ -97,7 +97,7 @@
     },
     {
       "tipo": "codigo",
-      "titulo": "Os comandos de instalação",
+      "titulo": "Os comandos de instalaçêo",
       "sub": "Uma vez por computador. Copie um bloco, espere terminar, feche e reabra o cmd.",
       "blocos": [
         {
@@ -131,11 +131,11 @@
         "abas": [
           {
             "rot": "O que aparece",
-            "html": "<pre>C:\\Users\\ana&gt; winget install --id OpenJS.NodeJS.LTS -e\nInstalado com êxito\nC:\\Users\\ana&gt; rem fechou o cmd e abriu outro\nC:\\Users\\ana&gt; npm install -g @openai/codex\nadded 1 package in 9s\nC:\\Users\\ana&gt; codex login status\nLogged in using ChatGPT</pre><p>Os números de versão e os tempos mudam com o tempo. O que importa é aparecer um número, e não a mensagem de erro.</p>"
+            "html": "<pre>C:\\Users\\ana&gt; winget install --id OpenJS.NodeJS.LTS -e\nInstalado com êxito\nC:\\Users\\ana&gt; rem fechou o cmd e abriu outro\nC:\\Users\\ana&gt; npm install -g @openai/codex\nadded 1 package in 9s\nC:\\Users\\ana&gt; codex login status\nLogged in using ChatGPT</pre><p>Os números de versêo e os tempos mudam com o tempo. O que importa é aparecer um número, e nêo a mensagem de erro.</p>"
           },
           {
             "rot": "Deu erro?",
-            "html": "<ul><li><b>\"… não é reconhecido como um comando interno ou externo\"</b>: feche o cmd, abra de novo e repita.</li><li><b>O winget pediu para aceitar termos</b>: Y e Enter.</li><li><b>login status mostra uma chave de API</b> e você queria a conta: <code>codex logout</code> e depois <code>codex login</code>.</li><li><b>O agente pergunta se confia na pasta</b>: é a sua pasta de treino, confirme.</li></ul>"
+            "html": "<ul><li><b>\"… nêo é reconhecido como um comando interno ou externo\"</b>: feche o cmd, abra de novo e repita.</li><li><b>O winget pediu para aceitar termos</b>: Y e Enter.</li><li><b>login status mostra uma chave de API</b> e você queria a conta: <code>codex logout</code> e depois <code>codex login</code>.</li><li><b>O agente pergunta se confia na pasta</b>: é a sua pasta de treino, confirme.</li></ul>"
           },
           {
             "rot": "Mac e Linux",
@@ -148,19 +148,19 @@
       "tipo": "simterm",
       "titulo": "Ensaie: instalar e conferir",
       "sub": "Repare no que acontece quando você confere na mesma janela.",
-      "janela": "Prompt de Comando · simulação",
+      "janela": "Prompt de Comando · simulaçêo",
       "sistema": "windows",
       "inicio": "C:\\Users\\ana",
       "sufixo": ">",
       "missoes": [
         {"pede": "Instale o Git pelo winget (nome exato: <code>Git.Git</code>).", "aceita": ["winget install --id Git.Git -e", "winget install -e --id Git.Git"], "saida": "Encontrado Git [Git.Git]\nBaixando…\nInstalado com êxito", "explica": "O <code>--id</code> com <code>-e</code> pede o nome exato, sem adivinhar. Esse é o lacre."},
-        {"pede": "Confira se o Git responde, nesta mesma janela.", "aceita": ["git --version"], "saida": "'git' não é reconhecido como um comando interno\nou externo, um programa operável ou um arquivo em lotes.", "explica": "Erro esperado: a janela aberta antes da instalação ainda não enxerga o programa novo. Não é defeito."},
+        {"pede": "Confira se o Git responde, nesta mesma janela.", "aceita": ["git --version"], "saida": "'git' nêo é reconhecido como um comando interno\nou externo, um programa operável ou um arquivo em lotes.", "explica": "Erro esperado: a janela aberta antes da instalaçêo ainda nêo enxerga o programa novo. Nêo é defeito."},
         {"pede": "Feche esta janela (o comando é <code>exit</code>).", "aceita": ["exit"], "saida": "(janela fechada · você abriu um cmd novo)", "explica": "Na vida real: tecla Windows, cmd, Enter. Janela nova, programa visível."},
-        {"pede": "Agora confira o Git de novo.", "aceita": ["git --version"], "saida": "git version (número da versão)", "explica": "Um número de versão: o computador reconhece o programa. Etapa 1 conferida."},
-        {"pede": "Confira por qual método o Codex entrou.", "aceita": ["codex login status"], "saida": "Logged in using ChatGPT", "explica": "\"Conectado usando o ChatGPT\": é a conta da assinatura, não uma chave de API. Anote só isso na ficha."}
+        {"pede": "Agora confira o Git de novo.", "aceita": ["git --version"], "saida": "git version (número da versêo)", "explica": "Um número de versêo: o computador reconhece o programa. Etapa 1 conferida."},
+        {"pede": "Confira por qual método o Codex entrou.", "aceita": ["codex login status"], "saida": "Logged in using ChatGPT", "explica": "\"Conectado usando o ChatGPT\": é a conta da assinatura, nêo uma chave de API. Anote só isso na ficha."}
       ],
       "fim": "Ensaio feito. No seu computador, a regra é a mesma: instalou, feche e abra o cmd antes de conferir.",
-      "legenda": "Simulação: as mensagens reais podem variar com a versão do Windows e do programa."
+      "legenda": "Simulaçêo: as mensagens reais podem variar com a versêo do Windows e do programa."
     },
     {
       "tipo": "pratica",
@@ -172,32 +172,32 @@
           "titulo": "E3 · Ferramentas instaladas",
           "min": "20 min",
           "texto": "Instale Git, GitHub CLI e Node com o winget e o agente que você vai usar. Feche e reabra o cmd e rode os <code>--version</code>.",
-          "pronto": "<code>git --version</code>, <code>gh --version</code> e <code>claude --version</code> ou <code>codex --version</code> mostram números de versão."
+          "pronto": "<code>git --version</code>, <code>gh --version</code> e <code>claude --version</code> ou <code>codex --version</code> mostram números de versêo."
         },
         {
           "id": "e2",
           "titulo": "E4 · Entrar e anotar o método",
           "min": "10 min",
           "texto": "Abra o agente, entre com a sua assinatura pelo navegador e anote numa ficha (ou nota no celular) qual método está ativo e onde você conferiu.",
-          "pronto": "a ficha diz \"conta\" (ou \"API\") e não contém nenhuma senha nem chave."
+          "pronto": "a ficha diz \"conta\" (ou \"API\") e nêo contém nenhuma senha nem chave."
         }
       ]
     },
     {
       "tipo": "quiz",
       "titulo": "Teste o que aprendeu",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
-          "p": "Você instalou o Git e, na mesma janela, <code>git --version</code> respondeu \"não é reconhecido\". O que fazer?",
+          "p": "Você instalou o Git e, na mesma janela, <code>git --version</code> respondeu \"nêo é reconhecido\". O que fazer?",
           "opcoes": ["Instalar de novo com outro comando.", "Abrir o cmd como administrador.", "Reiniciar o computador.", "Fechar o cmd, abrir outro e conferir de novo."],
           "certa": 3,
-          "explica": "A janela aberta antes da instalação não enxerga o programa novo. Janela nova resolve quase sempre; reinstalar só complica.",
+          "explica": "A janela aberta antes da instalaçêo nêo enxerga o programa novo. Janela nova resolve quase sempre; reinstalar só complica.",
           "ref": "simterm"
         },
         {
           "p": "Num grupo, alguém mandou um comando \"mais rápido\" para instalar o Codex, com um nome de pacote diferente de <code>@openai/codex</code>. O que você faz?",
-          "opcoes": ["Cola, porque é mais rápido.", "Cola, mas como administrador.", "Não cola; usa o comando da página oficial.", "Pede ao agente para rodar por você."],
+          "opcoes": ["Cola, porque é mais rápido.", "Cola, mas como administrador.", "Nêo cola; usa o comando da página oficial.", "Pede ao agente para rodar por você."],
           "certa": 2,
           "explica": "O nome dentro do comando é o lacre. Comando de origem desconhecida pode executar qualquer coisa no seu computador.",
           "cert": true,
@@ -205,7 +205,7 @@
         },
         {
           "p": "O que vai na ficha do projeto sobre o acesso do agente?",
-          "opcoes": ["Um print da tela de login.", "A chave de API, para não perder.", "A senha da assinatura.", "O método (conta ou API) e onde você conferiu."],
+          "opcoes": ["Um print da tela de login.", "A chave de API, para nêo perder.", "A senha da assinatura.", "O método (conta ou API) e onde você conferiu."],
           "certa": 3,
           "explica": "Anote o método, nunca a credencial. Chave em texto, print ou pedido pode ser usada por outra pessoa, e a conta é sua.",
           "ref": "diagrama"

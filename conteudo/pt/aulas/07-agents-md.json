@@ -5,28 +5,28 @@
   "titulo_curto": "Regras, Skills e memória",
   "menu": "Regras",
   "minutos": 18,
-  "lead": "Toda conversa nova com o agente começa do zero. Sem arquivo de instruções, você repete os mesmos avisos; com instrução vaga, nada muda. Regra que dá para conferir, roteiro guardado numa Skill e memória curta com data fazem o agente melhorar a cada tarefa.",
-  "objetivo": "reescrever o AGENTS.md com cinco regras conferíveis e transformar uma falha real em regra na próxima execução.",
-  "hero_alt": "Mão apontando para uma placa de instruções fixada na porta de uma sala de trabalho.",
+  "lead": "Toda conversa nova com o agente começa do zero. Sem arquivo de instruções, você repete os mesmos avisos; com instruçêo vaga, nada muda. Regra que dá para conferir, roteiro guardado numa Skill e memória curta com data fazem o agente melhorar a cada tarefa.",
+  "objetivo": "reescrever o AGENTS.md com cinco regras conferíveis e transformar uma falha real em regra na próxima execuçêo.",
+  "hero_alt": "Mêo apontando para uma placa de instruções fixada na porta de uma sala de trabalho.",
   "competencias": ["escrever-agents-md", "criar-skill", "manter-memoria", "registrar-falha"],
   "aprende": [
-    {"icone": "check", "t": "Escrever regra observável: ação e evidência"},
+    {"icone": "check", "t": "Escrever regra observável: açêo e evidência"},
     {"icone": "camadas", "t": "Saber qual AGENTS.md vale: global, projeto, subpasta"},
     {"icone": "lista", "t": "Guardar um procedimento repetido numa Skill"},
-    {"icone": "memoria", "t": "Memória com data e falha com menor correção"}
+    {"icone": "memoria", "t": "Memória com data e falha com menor correçêo"}
   ],
   "secoes": [
     {
       "tipo": "diagrama",
       "titulo": "Placa na porta, roteiro no fichário",
-      "sub": "Onde mora cada tipo de instrução. Clique em cada bloco.",
+      "sub": "Onde mora cada tipo de instruçêo. Clique em cada bloco.",
       "nos": [
         {
           "icone": "arquivo",
           "titulo": "AGENTS.md",
           "sub": "A placa na porta da pasta",
           "itens": [{"icone": "check", "t": "Cinco regras curtas"}, {"icone": "lupa", "t": "Lido em toda tarefa"}],
-          "detalhe": "Diz como trabalhar ali: por onde começar a ler, como conferir, o que não fazer e o formato da entrega. A história e os motivos ficam de fora. Arquivo curto é lido inteiro.",
+          "detalhe": "Diz como trabalhar ali: por onde começar a ler, como conferir, o que nêo fazer e o formato da entrega. A história e os motivos ficam de fora. Arquivo curto é lido inteiro.",
           "forte": true
         },
         {
@@ -34,21 +34,21 @@
           "titulo": "Skill",
           "sub": "O roteiro que sai do fichário",
           "itens": [{"icone": "arquivo", "t": ".agents\\skills\\&lt;nome&gt;\\SKILL.md"}],
-          "detalhe": "Um procedimento que se repete (a lista semanal, o relatório de sexta) vira uma Skill: um SKILL.md que começa com nome e descrição. O agente aciona quando a tarefa pede, sem carregar o manual inteiro em toda tarefa."
+          "detalhe": "Um procedimento que se repete (a lista semanal, o relatório de sexta) vira uma Skill: um SKILL.md que começa com nome e descriçêo. O agente aciona quando a tarefa pede, sem carregar o manual inteiro em toda tarefa."
         },
         {
           "icone": "memoria",
           "titulo": "Memória",
           "sub": "Um mural com data e dono",
           "itens": [{"icone": "arquivo", "t": "config\\memoria.md"}, {"icone": "arquivo", "t": "config\\decisoes.md"}],
-          "detalhe": "Não é o modelo aprendendo: é um arquivo que o agente lê quando você indica. Guarde fatos estáveis e decisões com data e motivo, não a conversa inteira. Marque no topo quando foi revisado."
+          "detalhe": "Nêo é o modelo aprendendo: é um arquivo que o agente lê quando você indica. Guarde fatos estáveis e decisões com data e motivo, nêo a conversa inteira. Marque no topo quando foi revisado."
         },
         {
           "icone": "x",
           "titulo": "Falhas",
           "sub": "A fita no degrau",
           "itens": [{"icone": "arquivo", "t": "config\\falhas.md"}],
-          "detalhe": "Sintoma, causa observada, menor correção e verificação, numa linha. Diga se a falha foi de pedido ou de infraestrutura. A correção vai para onde a próxima execução lê: o AGENTS.md ou a Skill."
+          "detalhe": "Sintoma, causa observada, menor correçêo e verificaçêo, numa linha. Diga se a falha foi de pedido ou de infraestrutura. A correçêo vai para onde a próxima execuçêo lê: o AGENTS.md ou a Skill."
         }
       ],
       "volta": "A falha vira regra; a regra muda a próxima tarefa",
@@ -56,7 +56,7 @@
       "rolagem": true,
       "rolagem_fim": {
         "titulo": "O agente que melhora",
-        "texto": "Regra conferível na porta, roteiro no fichário, memória curta com data e cada escorregão virando uma proteção pequena. É assim que a tarefa de amanhã sai melhor que a de hoje, sem trocar de modelo."
+        "texto": "Regra conferível na porta, roteiro no fichário, memória curta com data e cada escorregêo virando uma proteçêo pequena. É assim que a tarefa de amanhê sai melhor que a de hoje, sem trocar de modelo."
       }
     },
     {
@@ -66,10 +66,10 @@
       "passos": [
         {
           "titulo": "Regra observável",
-          "sub": "Ação e evidência",
+          "sub": "Açêo e evidência",
           "texto": [
-            "Faça o teste da placa: \"use óculos de proteção\" dá para conferir olhando; \"tenha cuidado\" não dá.",
-            "Regra boa pede uma ação e deixa uma evidência na entrega. Regra que não muda nenhuma decisão sai do arquivo."
+            "Faça o teste da placa: \"use óculos de proteçêo\" dá para conferir olhando; \"tenha cuidado\" nêo dá.",
+            "Regra boa pede uma açêo e deixa uma evidência na entrega. Regra que nêo muda nenhuma decisêo sai do arquivo."
           ],
           "exemplo": {"rot": "Observável", "texto": "Compare o total do relatório com vendas.csv e indique a diferença."}
         },
@@ -84,21 +84,21 @@
         },
         {
           "titulo": "Skill com limite",
-          "sub": "Descrição diz quando usar e quando não",
+          "sub": "Descriçêo diz quando usar e quando nêo",
           "texto": [
-            "A descrição é o que o agente lê para decidir se aciona a Skill. \"Ajuda com relatórios\" dispara até em ata de reunião.",
-            "Diga a situação e onde ela para. Antes de confiar, ensaie com três casos: normal, incompleto e fora do combinado."
+            "A descriçêo é o que o agente lê para decidir se aciona a Skill. \"Ajuda com relatórios\" dispara até em ata de reuniêo.",
+            "Diga a situaçêo e onde ela para. Antes de confiar, ensaie com três casos: normal, incompleto e fora do combinado."
           ],
-          "exemplo": {"rot": "Descrição boa", "texto": "Gerar rascunho de relatório semanal quando houver um CSV de vendas. Não usar para enviar relatórios ou tratar credenciais."}
+          "exemplo": {"rot": "Descriçêo boa", "texto": "Gerar rascunho de relatório semanal quando houver um CSV de vendas. Nêo usar para enviar relatórios ou tratar credenciais."}
         },
         {
-          "titulo": "Menor correção",
-          "sub": "Não a reconstrução",
+          "titulo": "Menor correçêo",
+          "sub": "Nêo a reconstruçêo",
           "texto": [
             "Quando o resultado sai errado, a vontade é trocar de modelo ou refazer tudo. Isso gasta horas e esconde problema simples.",
             "Falha de pedido se corrige no texto; falha de infraestrutura, com uma checagem. Uma linha nova no AGENTS.md costuma bastar."
           ],
-          "exemplo": {"rot": "Proteção pequena", "texto": "Confira o cabeçalho e a quantidade de registros antes de gerar."}
+          "exemplo": {"rot": "Proteçêo pequena", "texto": "Confira o cabeçalho e a quantidade de registros antes de gerar."}
         }
       ]
     },
@@ -110,12 +110,12 @@
         {
           "rot": "AGENTS.md · cinco regras conferíveis",
           "icone": "arquivo",
-          "conteudo": "# Instruções para o agente\n\nPropósito: <o que este projeto produz>\n\n1. Leia README.md antes de alterar qualquer coisa.\n2. Use só entradas/ e saidas/; não apague nem renomeie arquivos.\n3. Não invente dado que não está nas entradas; o que faltar vira pendência no fim.\n4. Nunca escreva chaves ou senhas em arquivo de texto; cite só o nome da variável do .env.\n5. Termine dizendo: o que alterou, como conferiu e o que ficou pendente."
+          "conteudo": "# Instruções para o agente\n\nPropósito: <o que este projeto produz>\n\n1. Leia README.md antes de alterar qualquer coisa.\n2. Use só entradas/ e saidas/; nêo apague nem renomeie arquivos.\n3. Nêo invente dado que nêo está nas entradas; o que faltar vira pendência no fim.\n4. Nunca escreva chaves ou senhas em arquivo de texto; cite só o nome da variável do .env.\n5. Termine dizendo: o que alterou, como conferiu e o que ficou pendente."
         },
         {
           "rot": ".agents\\skills\\relatorio-semanal\\SKILL.md",
           "icone": "lista",
-          "conteudo": "---\nname: relatorio-semanal\ndescription: Gerar rascunho de relatório semanal quando o usuário fornecer um CSV de vendas. Não usar para enviar relatórios ou tratar credenciais.\n---\n\n## Entrada\nUm CSV em entradas/.\n\n## Passos\n1. Confira o cabeçalho e a quantidade de registros antes de gerar.\n2. Some os valores; sem inventar ausências.\n3. Escreva o rascunho em saidas/relatorio.md.\n\n## Saída e conferência\nCite a fonte, o total conhecido e as pendências. Pare antes de enviar ou publicar."
+          "conteudo": "---\nname: relatorio-semanal\ndescription: Gerar rascunho de relatório semanal quando o usuário fornecer um CSV de vendas. Nêo usar para enviar relatórios ou tratar credenciais.\n---\n\n## Entrada\nUm CSV em entradas/.\n\n## Passos\n1. Confira o cabeçalho e a quantidade de registros antes de gerar.\n2. Some os valores; sem inventar ausências.\n3. Escreva o rascunho em saidas/relatorio.md.\n\n## Saída e conferência\nCite a fonte, o total conhecido e as pendências. Pare antes de enviar ou publicar."
         },
         {
           "rot": "config\\memoria.md",
@@ -125,7 +125,7 @@
         {
           "rot": "config\\falhas.md",
           "icone": "x",
-          "conteudo": "| Data | Sintoma | Causa observada | Menor correção | Verificação | Tipo |\n|---|---|---|---|---|---|\n| <dd/mm> | relatório vazio | planilha sem registros | conferir a quantidade de linhas antes de gerar | planilha vazia gera aviso, não relatório | infraestrutura |"
+          "conteudo": "| Data | Sintoma | Causa observada | Menor correçêo | Verificaçêo | Tipo |\n|---|---|---|---|---|---|\n| <dd/mm> | relatório vazio | planilha sem registros | conferir a quantidade de linhas antes de gerar | planilha vazia gera aviso, nêo relatório | infraestrutura |"
         },
         {
           "rot": "Pedido · conferir o que ele carregou",
@@ -143,7 +143,7 @@
         "abas": [
           {
             "rot": "Vaga × observável",
-            "html": "<ul><li>\"Seja excelente.\" → <b>como conferir: não há como.</b></li><li>\"Compare o total com vendas.csv e indique a diferença.\" → <b>a entrega traz a soma e a diferença.</b></li><li>\"Revise tudo com muita atenção.\" → troque por \"Liste as pendências no final\".</li></ul>"
+            "html": "<ul><li>\"Seja excelente.\" → <b>como conferir: nêo há como.</b></li><li>\"Compare o total com vendas.csv e indique a diferença.\" → <b>a entrega traz a soma e a diferença.</b></li><li>\"Revise tudo com muita atençêo.\" → troque por \"Liste as pendências no final\".</li></ul>"
           },
           {
             "rot": "Onde vale",
@@ -151,7 +151,7 @@
           },
           {
             "rot": "Caso incompleto",
-            "html": "<p><b>Sem a regra \"sem inventar ausências\"</b>: \"Total da semana: 100,00\" — a Caneta não tinha valor e o total fingiu que tinha.</p><p><b>Com a regra</b>: \"Total conhecido: 90,50. Pendência: a linha da Caneta está sem valor. Não preenchi.\"</p>"
+            "html": "<p><b>Sem a regra \"sem inventar ausências\"</b>: \"Total da semana: 100,00\" — a Caneta nêo tinha valor e o total fingiu que tinha.</p><p><b>Com a regra</b>: \"Total conhecido: 90,50. Pendência: a linha da Caneta está sem valor. Nêo preenchi.\"</p>"
           }
         ]
       }
@@ -172,40 +172,40 @@
           "id": "e2",
           "titulo": "E14 · A falha vira regra",
           "min": "15 min",
-          "texto": "Registre em config\\falhas.md uma falha real das aulas anteriores (sintoma, causa, menor correção, verificação, tipo) e ponha a correção no AGENTS.md.",
-          "pronto": "na tarefa seguinte, o mesmo problema não se repete e você consegue dizer qual linha do AGENTS.md o evitou."
+          "texto": "Registre em config\\falhas.md uma falha real das aulas anteriores (sintoma, causa, menor correçêo, verificaçêo, tipo) e ponha a correçêo no AGENTS.md.",
+          "pronto": "na tarefa seguinte, o mesmo problema nêo se repete e você consegue dizer qual linha do AGENTS.md o evitou."
         }
       ]
     },
     {
       "tipo": "quiz",
       "titulo": "Teste o que aprendeu",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
           "p": "Qual destas regras você consegue conferir olhando a entrega do agente?",
-          "opcoes": ["Capriche.", "Escreva de modo profissional.", "Liste as pendências no final.", "Revise tudo com muita atenção."],
+          "opcoes": ["Capriche.", "Escreva de modo profissional.", "Liste as pendências no final.", "Revise tudo com muita atençêo."],
           "certa": 2,
-          "explica": "Regra observável tem ação e evidência: a lista de pendências está ou não está no fim. As outras não deixam rastro.",
+          "explica": "Regra observável tem açêo e evidência: a lista de pendências está ou nêo está no fim. As outras nêo deixam rastro.",
           "cert": true,
           "ref": "passos"
         },
         {
-          "p": "O global diz \"responda em tópicos\", o AGENTS.md do projeto não fala de formato e você pede uma tabela na conversa. O que vale?",
+          "p": "O global diz \"responda em tópicos\", o AGENTS.md do projeto nêo fala de formato e você pede uma tabela na conversa. O que vale?",
           "opcoes": ["A tabela pedida na conversa.", "Os tópicos do global.", "Nenhum, dá erro.", "O AGENTS.md do projeto."],
           "certa": 0,
-          "explica": "O pedido explícito na conversa vale mais que os arquivos de instrução.",
+          "explica": "O pedido explícito na conversa vale mais que os arquivos de instruçêo.",
           "ref": "codigo"
         },
         {
           "p": "Você criou memoria.md em config, mas o agente ignorou os fatos. O que faz primeiro?",
           "opcoes": ["Indica o arquivo no próprio pedido e pede o fato usado.", "Troca o modelo por um maior.", "Copia mais conversas no arquivo.", "Apaga a memória."],
           "certa": 0,
-          "explica": "O arquivo existir não garante leitura. Diga qual arquivo consultar e peça que ele cite o fato que usou.",
+          "explica": "O arquivo existir nêo garante leitura. Diga qual arquivo consultar e peça que ele cite o fato que usou.",
           "ref": "diagrama"
         },
         {
-          "p": "O relatório saiu vazio porque a planilha estava sem registros. Qual é a menor correção?",
+          "p": "O relatório saiu vazio porque a planilha estava sem registros. Qual é a menor correçêo?",
           "opcoes": ["Reescrever a Skill inteira.", "Uma regra: conferir a quantidade de registros antes de gerar.", "Trocar de modelo.", "Refazer as pastas."],
           "certa": 1,
           "explica": "Falha de infraestrutura se corrige com uma checagem pequena. Reconstruir gasta horas e a planilha vazia continua quebrando.",

@@ -171,7 +171,7 @@
         {
           "rot": "cmd · look, set aside and save the first version",
           "icone": "check",
-          "conteudo": "git add README.md AGENTS.md .gitignore .env.example index.html\ngit diff --cached\ngit commit -m \"primeira versão\"\ngit log --oneline"
+          "conteudo": "git add README.md AGENTS.md .gitignore .env.example index.html\ngit diff --cached\ngit commit -m \"primeira versêo\"\ngit log --oneline"
         },
         {
           "rot": "cmd · after the agent changed something",
@@ -191,7 +191,7 @@
         {
           "rot": "cmd · undo a version you already saved",
           "icone": "camadas",
-          "conteudo": "git log --oneline\ngit revert <código da versão>"
+          "conteudo": "git log --oneline\ngit revert <código da versêo>"
         }
       ],
       "saida": {
@@ -247,12 +247,12 @@
           "explica": "Now you can use the shortcut: you just checked in the status that there's nothing personal in the list."
         },
         {
-          "pede": "Save the first version with the message <code>primeira versão</code>.",
+          "pede": "Save the first version with the message <code>primeira versêo</code>.",
           "aceita": [
-            "git commit -m \"primeira versão\"",
+            "git commit -m \"primeira versêo\"",
             "git commit -m \"primeira versao\""
           ],
-          "saida": "[master (root-commit) 5f6c1eb] primeira versão\n 5 files changed, 41 insertions(+)",
+          "saida": "[master (root-commit) 5f6c1eb] primeira versêo\n 5 files changed, 41 insertions(+)",
           "explica": "Version saved, with a short code (5f6c1eb). The numbers are examples."
         },
         {
